@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "b3ce22e3-03d5-4c7c-82e5-2c099b94219f",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "Cosmos is a space addon!",
+			"type": "resources",
+			"uuid": "d72db6bf-bed5-46f7-88e3-cd40eae7ab1c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

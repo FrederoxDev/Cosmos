@@ -1,0 +1,20 @@
+# This MCFUNCTION completes the setup of the addon
+
+# -- File Overview --
+# Loads in a structure at 0 0 0 in the end
+# Creates a teleporter at ~ 0 ~
+# Teleports the player to ~ 1 ~
+
+# structure load
+
+structure load mystructure:end_module 0 0 0
+
+fill ~-1 0 ~-1 ~1 3 ~1 bedrock 1 hollow
+fill ~ 1 ~ ~ 1 ~ end_portal
+
+teleport @p ~ 1 ~
+
+tellraw @p {"rawtext":[{"text":"[COSMOS] §dThank you for finishing the setup!"}]}
+title @p actionbar |COSMOS| §dThank you for finishing the setup!
+
+effect @p clear
