@@ -1,0 +1,66 @@
+{
+  "format_version": "1.16.220",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cosmo:tier_1_rocket",
+      "is_spawnable": true,
+      "is_summonable": true,
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "interact_text": "Enter Tier I Rocket",
+        "seats": {
+          "position": [
+            0,
+            0.4,
+            0
+          ]
+        }
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "event": "launch",
+              "filters": {
+                "test": "has_biome_tag",
+                "operator": "!=",
+                "value": "the_end"
+              }
+            }
+          },
+          {
+            "on_interact": {
+              "event": "launch_end",
+              "filters": {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "the_end"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "events": {
+      "launch": {
+        "run_command": {
+          "command": [
+            "execute @p ~ ~ ~ function moon/launch",
+            "kill @s"
+          ]
+        }
+      },
+      "launch_end": {
+        "run_command": {
+          "command": [
+            "execute @p ~ ~ ~ function overworld/return",
+            "kill @s"
+          ]
+        }
+      }
+    }
+  }
+}

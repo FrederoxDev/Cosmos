@@ -1,2 +1,7 @@
 pack.name=Cosmos RP
 pack.description=Cosmos is a space addon!
+tile.cosmo:moon_rock.name=Moon Rock
+tile.cosmo:moon_rock.name=Moon Rock
+item.spawn_egg.entity.cosmo:tier_1_rocket.name=Spawn Tier 1 Rocket
+entity.cosmo:tier_1_rocket.name=Tier I Rocket
+action.hint.exit.cosmo:tier_1_rocket=Exit tier I rocket

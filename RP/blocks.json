@@ -3,5 +3,9 @@
 		1,
 		1,
 		0
-	]
+	],
+	"cosmo:moon_rock": {
+		"textures": "cosmo_moon_rock",
+		"sound": "stone"
+	}
 }

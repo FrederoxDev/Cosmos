@@ -3,5 +3,9 @@
 	"padding": 8,
 	"resource_pack_name": "Cosmos",
 	"texture_name": "atlas.terrain",
-	"texture_data": {}
+	"texture_data": {
+		"cosmo_moon_rock": {
+			"textures": "textures/blocks/moon_rock"
+		}
+	}
 }

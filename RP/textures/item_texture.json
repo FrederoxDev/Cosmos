@@ -1,5 +1,9 @@
 {
 	"resource_pack_name": "Cosmos",
 	"texture_name": "atlas.items",
-	"texture_data": {}
+	"texture_data": {
+		"cosmo_tier_1_rocket_egg": {
+			"textures": "textures/items/tier_1_rocket"
+		}
+	}
 }

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cosmo:tier_1_rocket",
+			"materials": {
+				"default": "entity_alphablend"
+			},
+			"textures": {
+				"default": "textures/entity/tier_1_rocket"
+			},
+			"geometry": {
+				"default": "geometry.tier_1_rocket"
+			},
+			"render_controllers": [
+				"controller.render.tier_1_rocket"
+			],
+			"spawn_egg": {
+				"texture": "cosmo_tier_1_rocket_egg",
+				"texture_index": 0
+			}
+		}
+	}
+}
