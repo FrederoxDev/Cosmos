@@ -5,7 +5,17 @@
 			"identifier": "minecraft:player",
 			"is_spawnable": false,
 			"is_summonable": false,
-			"is_experimental": false
+			"is_experimental": false,
+			"animations": {
+				"space_suit": "animation.space_suit"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"space_suit": "!q.equipped_item_any_tag('slot.armor.feet', 'minecraft:iron_tier') || !q.equipped_item_any_tag('slot.armor.legs', 'minecraft:iron_tier') || !q.equipped_item_any_tag('slot.armor.chest', 'minecraft:iron_tier') || !q.equipped_item_any_tag('slot.armor.head', 'minecraft:iron_tier')"
+					}
+				]
+			}
 		},
 		"component_groups": {
 			"minecraft:add_bad_omen": {
@@ -149,74 +159,72 @@
 			"minecraft:scaffolding_climber": {},
 			"minecraft:environment_sensor": {
 				"triggers": {
-					"filters": {
-						"all_of": [
-							{
-								"test": "has_mob_effect",
-								"subject": "self",
-								"value": "bad_omen"
-							},
-							{
-								"test": "is_in_village",
-								"subject": "self",
-								"value": true
-							}
-						]
-					},
+					"all_of": [
+						{
+							"test": "has_mob_effect",
+							"subject": "self",
+							"value": "bad_omen"
+						},
+						{
+							"test": "is_in_village",
+							"subject": "self",
+							"value": true
+						}
+					],
 					"event": "minecraft:trigger_raid"
 				}
-			},
-			"minecraft:damage_sensor": {
-				"triggers": [
-					{
-						"cause": "fatal",
-						"on_damage": {
-							"event": "cosmos:death"
-						}
+			}
+		},
+		"minecraft:damage_sensor": {
+			"triggers": [
+				{
+					"cause": "fatal",
+					"on_damage": {
+						"event": "cosmos:death"
 					}
+				}
+			]
+		}
+	},
+	"events": {
+		"cosmos:death": {
+			"run_command": {
+				"command": [
+					"tag @p remove moon"
 				]
 			}
 		},
-		"events": {
-			"cosmos:death": {
-				"run_command": {
-					"command": [
-						"tag @p remove moon"
-					]
-				}
+		"minecraft:gain_bad_omen": {
+			"add": {
+				"component_groups": [
+					"minecraft:add_bad_omen"
+				]
+			}
+		},
+		"minecraft:clear_add_bad_omen": {
+			"remove": {
+				"component_groups": [
+					"minecraft:add_bad_omen"
+				]
 			},
-			"minecraft:gain_bad_omen": {
-				"add": {
-					"component_groups": [
-						"minecraft:add_bad_omen"
-					]
-				}
-			},
-			"minecraft:clear_add_bad_omen": {
-				"remove": {
-					"component_groups": [
-						"minecraft:add_bad_omen"
-					]
-				},
-				"add": {
-					"component_groups": [
-						"minecraft:clear_bad_omen_spell_effect"
-					]
-				}
-			},
-			"minecraft:trigger_raid": {
-				"add": {
-					"component_groups": [
-						"minecraft:raid_trigger"
-					]
-				}
-			},
-			"minecraft:remove_raid_trigger": {
-				"remove": {
-					"component_groups": [
-						"minecraft:raid_trigger"
-					]
-				}
+			"add": {
+				"component_groups": [
+					"minecraft:clear_bad_omen_spell_effect"
+				]
+			}
+		},
+		"minecraft:trigger_raid": {
+			"add": {
+				"component_groups": [
+					"minecraft:raid_trigger"
+				]
+			}
+		},
+		"minecraft:remove_raid_trigger": {
+			"remove": {
+				"component_groups": [
+					"minecraft:raid_trigger"
+				]
 			}
 		}
 	}

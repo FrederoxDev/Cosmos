@@ -1,0 +1,15 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.space_suit": {
+            "loop": true,
+            "animation_length": 1,
+            "timeline": {
+                "0.0": [
+                    "/title @p[tag=moon] actionbar No oxygen!",
+                    "/effect @p[tag=moon] wither 1 1"
+                ]
+            }
+        }
+    }
+}
