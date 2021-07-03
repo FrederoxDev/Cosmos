@@ -5,41 +5,38 @@
       "identifier": "cosmo:tier_1_rocket",
       "is_spawnable": true,
       "is_summonable": true,
+      "animations": {
+        "launch": "animation.tier_1_launch"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "launch": "query.has_rider"
+          }
+        ]
+      }
     },
     "component_groups": {},
     "components": {
-      "minecraft:rideable": {
-        "seat_count": 1,
-        "interact_text": "Enter Tier I Rocket",
-        "seats": {
-          "position": [
-            0,
-            0.4,
-            0
-          ]
-        }
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
       },
-      "minecraft:interact": {
-        "interactions": [
+      "minecraft:collision_box": {
+        "height": 2,
+        "width": 1
+      },
+      "minecraft:damage_sensor": {},
+      "minecraft:rideable": {
+        "controlling_seat": 1,
+        "interact_text": "action.interact.tier_1_launch",
+        "seats": [
           {
-            "on_interact": {
-              "event": "launch",
-              "filters": {
-                "test": "has_biome_tag",
-                "operator": "!=",
-                "value": "the_end"
-              }
-            }
-          },
-          {
-            "on_interact": {
-              "event": "launch_end",
-              "filters": {
-                "test": "has_biome_tag",
-                "operator": "==",
-                "value": "the_end"
-              }
-            }
+            "position": [
+              0,
+              0.4,
+              0
+            ]
           }
         ]
       }
@@ -60,6 +57,26 @@
             "kill @s"
           ]
         }
+      },
+      "launch_multi": {
+        "sequence": [
+          {
+            "trigger": "launch",
+            "filters": {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "the_end"
+            }
+          },
+          {
+            "trigger": "launch_end",
+            "filters": {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "the_end"
+            }
+          }
+        ]
       }
     }
   }

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cosmo:space_suit_boots",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 195,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:icon": {
+        "texture": "cosmo_space_suit_boots"
+      },
+      "minecraft:render_offsets": "boots",
+      "minecraft:armor": {
+        "protection": 2
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.feet"
+      },
+      "tag:space_suit": {}
+    }
+  }
+}

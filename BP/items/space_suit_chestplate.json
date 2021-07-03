@@ -1,0 +1,30 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cosmo:space_suit_chestplate",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 240,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:icon": {
+        "texture": "cosmo_space_suit_chestplate"
+      },
+      "minecraft:render_offsets": "chestplates",
+      "minecraft:armor": {
+        "protection": 6
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.chest"
+      },
+      "tag:space_suit": {}
+    }
+  }
+}
