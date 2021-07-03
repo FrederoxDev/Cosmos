@@ -12,7 +12,7 @@
 			"scripts": {
 				"animate": [
 					{
-						"space_suit": "!q.equipped_item_any_tag('slot.armor.feet', 'minecraft:iron_tier') || !q.equipped_item_any_tag('slot.armor.legs', 'minecraft:iron_tier') || !q.equipped_item_any_tag('slot.armor.chest', 'minecraft:iron_tier') || !q.equipped_item_any_tag('slot.armor.head', 'minecraft:iron_tier')"
+						"space_suit": "!q.equipped_item_any_tag('slot.armor.feet', 'space_suit') || !q.equipped_item_any_tag('slot.armor.legs', 'space_suit') || !q.equipped_item_any_tag('slot.armor.chest', 'space_suit') || !q.equipped_item_any_tag('slot.armor.head', 'space_suit')"
 					}
 				]
 			}

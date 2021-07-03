@@ -4,6 +4,26 @@
 	"texture_data": {
 		"cosmo_tier_1_rocket_egg": {
 			"textures": "textures/items/tier_1_rocket"
+		},
+		"cosmo_space_suit_helmet": {
+			"textures": [
+				"textures/items/space_suit_helmet"
+			]
+		},
+		"cosmo_space_suit_chestplate": {
+			"textures": [
+				"textures/items/space_suit_chestplate"
+			]
+		},
+		"cosmo_space_suit_leggings": {
+			"textures": [
+				"textures/items/space_suit_leggings"
+			]
+		},
+		"cosmo_space_suit_boots": {
+			"textures": [
+				"textures/items/space_suit_boots"
+			]
 		}
 	}
 }
