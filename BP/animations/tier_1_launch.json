@@ -1,43 +1,19 @@
 {
-    "format_version": "1.10.0",
-    "animations": {
-        "animation.tier_1_launch": {
-            "loop": true,
-            "animation_length": 16,
-            "timeline": {
-                "0.0": [
-                    "/say @p Test",
-                    "/title @p actionbar Launching in: 5",
-                    "/camerashake add @p 0.05"
-                ],
-                "1.0": [
-                    "/title @p actionbar Launching in: 4",
-                    "/camerashake add @ep 0.05"
-                ],
-                "2.0": [
-                    "/title @p actionbar Launching in: 3",
-                    "/camerashake add @p 0.05"
-                ],
-                "3.0": [
-                    "/title @p actionbar Launching in: 2",
-                    "/camerashake add @p 0.05"
-                ],
-                "4.0": [
-                    "/title @p actionbar Launching in: 1",
-                    "/camerashake add @p 0.05",
-                    "/tag @s add flame_particles"
-                ],
-                "5.0": [
-                    "/camerashake add @p 0.8 10",
-                    "/effect @s levitation 10 12 true"
-                ],
-                "7.0": [
-                    "/effect @s levitation 10 30 true"
-                ],
-                "15.0": [
-                    "/event entity @s launch_multi"
-                ]
-            }
-        }
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.tier_1_launch": {
+      "loop": true,
+      "animation_length": 16,
+      "timeline": {
+        "0.0": ["/title @p actionbar Launching in: 5", "/camerashake add @p 0.05"],
+        "1.0": ["/title @p actionbar Launching in: 4", "/camerashake add @ep 0.05"],
+        "2.0": ["/title @p actionbar Launching in: 3", "/camerashake add @p 0.05"],
+        "3.0": ["/title @p actionbar Launching in: 2", "/camerashake add @p 0.05"],
+        "4.0": ["/title @p actionbar Launching in: 1", "/camerashake add @p 0.05", "/tag @s add flame_particles"],
+        "5.0": ["/camerashake add @p 0.8 10", "/effect @s levitation 10 12 true"],
+        "7.0": ["/effect @s levitation 10 30 true"],
+        "15.0": ["/event entity @s launch_multi"]
+      }
     }
+  }
 }
