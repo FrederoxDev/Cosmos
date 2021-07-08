@@ -1,0 +1,8 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:texture_set": {
+		"color": "moon_rock",
+		"metalness_emissive_roughness": "moon_rock_mer",
+		"normal": "moon_rock_normal"
+	}
+}
