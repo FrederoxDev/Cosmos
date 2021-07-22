@@ -1,0 +1,73 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "rocket_ui",
+				"npc_name": "Rocket",
+				"text": "Please select the planet you would like to go to:",
+				"buttons": [
+					{
+						"name": "The Overworld",
+						"commands": [
+							"/dialogue open @s @p overworld",
+							"/tag @s add ui"
+						]
+					},
+					{
+						"name": "The Moon",
+						"commands": [
+							"/dialogue open @s @p moon",
+							"/tag @s add ui"
+						]
+					},
+					{
+						"name": "Exit Rocket",
+						"commands": [
+							"ride @p stop_riding",
+							"event entity @s close_ui"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "overworld",
+				"npc_name": "The Overworld",
+				"text": "Tier 1 Rocket required",
+				"buttons": [
+					{
+						"name": "Launch",
+						"commands": [
+							"/event entity @s launch_overworld_controller"
+						]
+					},
+					{
+						"name": "Go Back",
+						"commands": [
+							"/dialogue open @s @p rocket_ui"
+						]
+					}
+				]
+			},
+			{
+				"scene_tag": "moon",
+				"npc_name": "The Moon",
+				"text": "Tier 1 Rocket required",
+				"buttons": [
+					{
+						"name": "Launch",
+						"commands": [
+							"/event entity @s launch_moon_controller"
+						]
+					},
+					{
+						"name": "Go Back",
+						"commands": [
+							"/dialogue open @s @p rocket_ui"
+						]
+					}
+				]
+			}
+		]
+	}
+}

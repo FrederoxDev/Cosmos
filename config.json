@@ -3,7 +3,7 @@
 	"name": "Cosmos",
 	"namespace": "cosmo",
 	"author": "Frederox",
-	"targetVersion": "1.17.0",
+	"targetVersion": "1.17.10",
 	"description": "Cosmos is a space addon!",
 	"capabilities": [],
 	"packs": {

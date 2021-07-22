@@ -1,3 +1,10 @@
+// -- VARIANTS - Used to decide which event to run
+// UI : -- Variant 1
+// OVERWORLD : -- Variant 2
+// MOON : -- Variant 3
+// -- EVENTS --
+// launch_overworld_controller - Takes the user to the overworld
+// launch_moon_controller - Takes the user to the moon
 {
   "format_version": "1.16.220",
   "minecraft:entity": {
@@ -6,17 +13,49 @@
       "is_spawnable": true,
       "is_summonable": true,
       "animations": {
-        "launch": "animation.tier_1_launch"
+        "rocket_ui": "animation.rocket_ui",
+        "launch_overworld": "animation.launch_overworld",
+        "launch_moon": "animation.launch_moon"
       },
       "scripts": {
         "animate": [
           {
-            "launch": "query.has_rider"
+            "rocket_ui": "query.is_saddled && q.has_rider && !q.variant"
+          },
+          {
+            "launch_overworld": "q.has_rider && q.variant == 2"
+          },
+          {
+            "launch_moon": "q.has_rider && q.variant == 3"
           }
         ]
       }
     },
-    "component_groups": {},
+    "component_groups": {
+      "variant_ui": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "variant_overworld": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "variant_moon": {
+        "minecraft:variant": {
+          "value": 3
+        }
+      },
+      "has_fuel": {
+        "minecraft:is_saddled": {}
+      },
+      "tier_1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      }
+    },
     "components": {
       "minecraft:physics": {
         "has_collision": true,
@@ -26,7 +65,25 @@
         "height": 2,
         "width": 1
       },
-      "minecraft:damage_sensor": {},
+      "minecraft:inventory": {
+        "inventory_size": 1,
+        "container_type": "horse"
+      },
+      "minecraft:npc": {},
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "slot": 0,
+            "item": "minecraft:dirt",
+            "accepted_items": [
+              "minecraft:dirt"
+            ],
+            "on_equip": {
+              "event": "fuel_rocket"
+            }
+          }
+        ]
+      },
       "minecraft:rideable": {
         "controlling_seat": 1,
         "interact_text": "action.interact.tier_1_launch",
@@ -42,26 +99,46 @@
       }
     },
     "events": {
-      "launch": {
+      // UI
+      "open_ui": {
         "run_command": {
           "command": [
-            "execute @p ~ ~ ~ function moon/launch",
-            "kill @s"
+            "tag @s add ui"
           ]
         }
       },
-      "launch_end": {
+      "close_ui": {
         "run_command": {
           "command": [
-            "execute @p ~ ~ ~ function overworld/return",
-            "kill @s"
+            "tag @s remove ui"
           ]
         }
       },
-      "launch_multi": {
+      // UPGRADES
+      "fuel_rocket": {
+        "run_command": {
+          "command": [
+            "say ROCKET FUELED!"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "has_fuel"
+          ]
+        }
+      },
+      "upgrade_rocket": {
+        "add": {
+          "component_groups": [
+            "tier_1"
+          ]
+        }
+      },
+      // THE OVERWORLD
+      "launch_overworld_controller": {
         "sequence": [
           {
-            "trigger": "launch",
+            "trigger": "launch_overworld_err",
             "filters": {
               "test": "has_biome_tag",
               "operator": "!=",
@@ -69,7 +146,7 @@
             }
           },
           {
-            "trigger": "launch_end",
+            "trigger": "launch_overworld",
             "filters": {
               "test": "has_biome_tag",
               "operator": "==",
@@ -77,6 +154,97 @@
             }
           }
         ]
+      },
+      "launch_overworld_err": { // Player is already inside of the overworld...
+        "run_command": {
+          "command": [
+            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dThe player is already in the overworld.\"}]}",
+            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dPlease replace the rocket to reopen the menu\"}]}",
+            "ride @p stop_riding",
+            "event entity @s close_ui"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "variant_ui"
+          ]
+        }
+      },
+      "launch_overworld": { // The player is not inside of the overowlrd
+        "remove": {
+          "component_groups": [
+            "variant_ui"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "variant_overworld"
+          ]
+        }
+      },
+      "launched_overworld": { // Ran after the launching animation
+        "run_command": {
+          "command": [
+            "execute @p ~ ~ ~ function overworld/launch",
+            "kill @s"
+          ]
+        }
+      },
+      // THE MOON
+      "launch_moon_controller": {
+        "sequence": [
+          {
+            "trigger": "launch_moon_err",
+            "filters": {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "the_end"
+            }
+          },
+          {
+            "trigger": "launch_moon",
+            "filters": {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "the_end"
+            }
+          }
+        ]
+      },
+      "launch_moon_err": { // Player is already inside of the moon...
+        "run_command": {
+          "command": [
+            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dThe player is already on the moon\"}]}",
+            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dPlease replace the rocket to reopen the menu\"}]}",
+            "ride @p stop_riding",
+            "event entity @s close_ui"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "variant_ui"
+          ]
+        }
+      },
+      "launch_moon": { // The player is not inside of the overowlrd
+        "remove": {
+          "component_groups": [
+            "variant_ui"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "variant_moon"
+          ]
+        }
+      },
+      "launched_moon": { // Ran after the launching animation
+        "run_command": {
+          "command": [
+            "execute @p ~ ~ ~ function moon/launch",
+            "kill @s"
+          ]
+        }
       }
     }
   }
