@@ -2,9 +2,15 @@
 // UI : -- Variant 1
 // OVERWORLD : -- Variant 2
 // MOON : -- Variant 3
+//
 // -- EVENTS --
 // launch_overworld_controller - Takes the user to the overworld
 // launch_moon_controller - Takes the user to the moon
+//
+// -- TIERS --
+// TIER 1 - unlocked by default
+// TIER 2 - Mark Variant 1 +
+//
 {
   "format_version": "1.16.220",
   "minecraft:entity": {
@@ -32,26 +38,16 @@
       }
     },
     "component_groups": {
-      "variant_ui": {
-        "minecraft:variant": {
-          "value": 1
-        }
-      },
-      "variant_overworld": {
-        "minecraft:variant": {
-          "value": 2
-        }
-      },
-      "variant_moon": {
-        "minecraft:variant": {
-          "value": 3
-        }
-      },
       "has_fuel": {
         "minecraft:is_saddled": {}
       },
-      "tier_1": {
+      "tier_2": {
         "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "variant_ui": {
+        "minecraft:variant": {
           "value": 1
         }
       }
@@ -66,7 +62,7 @@
         "width": 1
       },
       "minecraft:inventory": {
-        "inventory_size": 1,
+        "inventory_size": 2,
         "container_type": "horse"
       },
       "minecraft:npc": {},
@@ -74,9 +70,9 @@
         "slots": [
           {
             "slot": 0,
-            "item": "minecraft:dirt",
+            "item": "cosmo:fuel_tank",
             "accepted_items": [
-              "minecraft:dirt"
+              "cosmo:fuel_tank"
             ],
             "on_equip": {
               "event": "fuel_rocket"
@@ -94,6 +90,16 @@
               0.4,
               0
             ]
+          }
+        ]
+      },
+      "cosmo:rocket_launch_controller": {
+        "planets": [
+          {
+            "name": "overworld",
+          },
+          {
+            "name": "moon"
           }
         ]
       }
@@ -116,11 +122,6 @@
       },
       // UPGRADES
       "fuel_rocket": {
-        "run_command": {
-          "command": [
-            "say ROCKET FUELED!"
-          ]
-        },
         "add": {
           "component_groups": [
             "has_fuel"
@@ -131,118 +132,6 @@
         "add": {
           "component_groups": [
             "tier_1"
-          ]
-        }
-      },
-      // THE OVERWORLD
-      "launch_overworld_controller": {
-        "sequence": [
-          {
-            "trigger": "launch_overworld_err",
-            "filters": {
-              "test": "has_biome_tag",
-              "operator": "!=",
-              "value": "the_end"
-            }
-          },
-          {
-            "trigger": "launch_overworld",
-            "filters": {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "the_end"
-            }
-          }
-        ]
-      },
-      "launch_overworld_err": { // Player is already inside of the overworld...
-        "run_command": {
-          "command": [
-            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dThe player is already in the overworld.\"}]}",
-            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dPlease replace the rocket to reopen the menu\"}]}",
-            "ride @p stop_riding",
-            "event entity @s close_ui"
-          ]
-        },
-        "remove": {
-          "component_groups": [
-            "variant_ui"
-          ]
-        }
-      },
-      "launch_overworld": { // The player is not inside of the overowlrd
-        "remove": {
-          "component_groups": [
-            "variant_ui"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "variant_overworld"
-          ]
-        }
-      },
-      "launched_overworld": { // Ran after the launching animation
-        "run_command": {
-          "command": [
-            "execute @p ~ ~ ~ function overworld/launch",
-            "kill @s"
-          ]
-        }
-      },
-      // THE MOON
-      "launch_moon_controller": {
-        "sequence": [
-          {
-            "trigger": "launch_moon_err",
-            "filters": {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "the_end"
-            }
-          },
-          {
-            "trigger": "launch_moon",
-            "filters": {
-              "test": "has_biome_tag",
-              "operator": "!=",
-              "value": "the_end"
-            }
-          }
-        ]
-      },
-      "launch_moon_err": { // Player is already inside of the moon...
-        "run_command": {
-          "command": [
-            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dThe player is already on the moon\"}]}",
-            "tellraw @p {\"rawtext\":[{\"text\":\"[COSMOS] §dPlease replace the rocket to reopen the menu\"}]}",
-            "ride @p stop_riding",
-            "event entity @s close_ui"
-          ]
-        },
-        "remove": {
-          "component_groups": [
-            "variant_ui"
-          ]
-        }
-      },
-      "launch_moon": { // The player is not inside of the overowlrd
-        "remove": {
-          "component_groups": [
-            "variant_ui"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "variant_moon"
-          ]
-        }
-      },
-      "launched_moon": { // Ran after the launching animation
-        "run_command": {
-          "command": [
-            "execute @p ~ ~ ~ function moon/launch",
-            "kill @s"
           ]
         }
       }
