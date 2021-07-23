@@ -7,11 +7,11 @@ item.cosmo:space_suit_helmet=Space Helmet
 item.cosmo:space_suit_chestplate=Space Chestplate
 item.cosmo:space_suit_leggings=Space Leggings
 item.cosmo:space_suit_boots=Space Boots
-item.spawn_egg.entity.cosmo:tier_1_rocket.name=Spawn Tier 1 Rocket
-item.cosmo:tier_1_rocket_egg=Tier I Rocket
+item.spawn_egg.entity.cosmo:tier_1_rocket.name=Spawn Rocket
+item.cosmo:tier_1_rocket_egg=Rocket
 item.cosmo:fuel_tank=Fuel Tank
 
 action.hint.exit.cosmo:tier_1_rocket=Exit tier I rocket
 action.interact.tier_1_rocket=Enter Tier 1 Rocket
 
-entity.cosmo:tier_1_rocket.name=Tier I Rocket
+entity.cosmo:tier_1_rocket.name=Rocket

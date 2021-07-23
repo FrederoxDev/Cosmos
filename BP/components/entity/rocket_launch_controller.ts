@@ -21,20 +21,15 @@ export default defineComponent(({ name, template, schema }) => {
 			var firstOp: string;
 			var secondOp: string;
 
-			const isOverworld = () => {
-				if (planet.name == "overworld") { return true }
-				else return false
-			}
+			const name = planet.name
 
-			if (isOverworld) {
+			if (name == "overworld") {
 				firstOp = "!="
 				secondOp = "=="
 			} else {
 				firstOp = "=="
 				secondOp = "!="
 			}
-
-			const name = planet.name
 
 			create({
 				[`launch_${name}_controller`]: {

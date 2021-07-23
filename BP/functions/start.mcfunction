@@ -5,6 +5,9 @@
 # Teleports the player to ~ 1 ~
 # Gives the player the SETUP tag
 
+gamerule sendcommandfeedback false
+gamerule commandblockoutput false
+
 fill ~-1 0 ~-1 ~1 3 ~1 bedrock 1 hollow
 fill ~ 1 ~ ~ 1 ~ end_portal
 
