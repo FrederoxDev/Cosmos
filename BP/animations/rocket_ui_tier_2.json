@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.rocket_ui_tier_2": {
+            "loop": true,
+            "timeline": {
+                "0.0": [
+                    "/dialogue open @s[tag=!ui] @p rocket_ui_tier_2"
+                ]
+            },
+            "animation_length": 0.1
+        }
+    }
+}

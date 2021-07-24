@@ -19,9 +19,20 @@
 			}
 		]
 	},
-	"cave_watermark": {
+	"icon_watermark": {
+		"type": "image",
+		"texture": "textures/ui/pack_icon",
+		"anchor_from": "top_right",
+		"anchor_to": "top_right",
+		"alpha": 1,
+		"size": [
+			28,
+			28
+		]
+	},
+	"text_watermark": {
 		"type": "label",
-		"text": "§lAll textures shown are placeholder. Everything is subject to change.",
+		"text": "§dCosmos [UI TEST BUILD]\n§fBy Frederox",
 		"color": [
 			1,
 			1,
@@ -31,7 +42,12 @@
 		"font_size": "medium",
 		"anchor_from": "top_right",
 		"anchor_to": "top_right",
-		"alpha": 10
+		"alpha": 1,
+		"text_alignment": "right",
+		"offset": [
+			-32,
+			6
+		]
 	},
 	"special_render": {
 		"type": "custom",
@@ -52,14 +68,17 @@
 				"special_render@debug_screen.special_render": {}
 			},
 			{
-				"bio_watermark@debug_screen.cave_watermark": {}
+				"text@debug_screen.text_watermark": {}
+			},
+			{
+				"icon@debug_screen.icon_watermark": {}
 			}
 		]
 	},
 	"debug_screen@common.base_screen": {
 		"send_telemetry": false,
 		"screen_not_flushable": true,
-		"render_game_behind": true,
+		"render_game_behind": false,
 		"is_showing_menu": false,
 		"low_frequency_rendering": true,
 		"is_modal": true,

@@ -8,7 +8,7 @@
 effect @p blindness 255 255
 effect @p slowness 255 255
 
-tag @p add moon_launch
+tag @p[r=50] add moon_launch
 
 fill ~-1 0 ~-1 ~1 3 ~1 bedrock 1 hollow
 fill ~ 1 ~ ~ 1 ~ end_portal

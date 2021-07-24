@@ -15,24 +15,20 @@
   "format_version": "1.16.220",
   "minecraft:entity": {
     "description": {
-      "identifier": "cosmo:tier_1_rocket",
+      "identifier": "cosmo:rocket",
       "is_spawnable": true,
       "is_summonable": true,
       "animations": {
         "rocket_ui": "animation.rocket_ui",
-        "launch_overworld": "animation.launch_overworld",
-        "launch_moon": "animation.launch_moon"
+        "rocket_ui_tier_2": "animation.rocket_ui_tier_2"
       },
       "scripts": {
         "animate": [
           {
-            "rocket_ui": "query.is_saddled && q.has_rider && !q.variant"
+            "rocket_ui": "query.is_saddled && q.has_rider && !q.variant && q.mark_variant == 1"
           },
           {
-            "launch_overworld": "q.has_rider && q.variant == 2"
-          },
-          {
-            "launch_moon": "q.has_rider && q.variant == 3"
+            "rocket_ui_tier_2": "query.is_saddled && q.has_rider && !q.variant && q.mark_variant == 2"
           }
         ]
       }
@@ -41,18 +37,21 @@
       "has_fuel": {
         "minecraft:is_saddled": {}
       },
-      "tier_2": {
-        "minecraft:mark_variant": {
-          "value": 1
-        }
-      },
       "variant_ui": {
         "minecraft:variant": {
           "value": 1
         }
+      },
+      "tier_2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
       }
     },
     "components": {
+      "minecraft:mark_variant": { // A default value overwrite it to increase the level of the rocket!
+        "value": 1
+      },
       "minecraft:physics": {
         "has_collision": true,
         "has_gravity": true
@@ -77,6 +76,16 @@
             "on_equip": {
               "event": "fuel_rocket"
             }
+          },
+          {
+            "slot": 1,
+            "item": "minecraft:dirt",
+            "accepted_items": [
+              "minecraft:dirt"
+            ],
+            "on_equip": {
+              "event": "upgrade_rocket"
+            }
           }
         ]
       },
@@ -97,9 +106,11 @@
         "planets": [
           {
             "name": "overworld",
+            "tier": 1
           },
           {
-            "name": "moon"
+            "name": "moon",
+            "tier": 1
           }
         ]
       }
@@ -131,7 +142,7 @@
       "upgrade_rocket": {
         "add": {
           "component_groups": [
-            "tier_1"
+            "tier_2"
           ]
         }
       }

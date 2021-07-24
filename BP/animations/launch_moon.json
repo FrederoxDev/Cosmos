@@ -34,7 +34,7 @@
           "/effect @s levitation 15 30 true"
         ],
         "20.0": [
-          "/tag @p add launch_moon",
+          // "/tag @p add launch_moon",
           "/event entity @s launched_moon"
         ]
       }

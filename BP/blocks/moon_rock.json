@@ -1,9 +1,14 @@
 {
-  "format_version": "1.16.220",
+  "format_version": "1.17.0",
   "minecraft:block": {
     "description": {
-      "identifier": "cosmo:moon_rock"
+      "identifier": "cosmo:moon_rock",
+      "category": "construction"
     },
-    "components": {}
+    "components": {
+      // "minecraft:creative_category": {  DISSABLE UNTIL BETA RELEASED TO MAIN
+      //   "group": "construction" 
+      // },
+    }
   }
 }

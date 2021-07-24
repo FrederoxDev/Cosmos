@@ -9,6 +9,10 @@ export default defineComponent(({ name, template, schema }) => {
 						name: {
 							type: 'string',
 							description: 'The name of the planet'
+						},
+						tier: {
+							type: 'number',
+							description: 'The tier this planet is unlocked'
 						}
 					}
 				}
@@ -22,6 +26,7 @@ export default defineComponent(({ name, template, schema }) => {
 			var secondOp: string;
 
 			const name = planet.name
+			const tier = planet.tier
 
 			if (name == "overworld") {
 				firstOp = "!="
@@ -30,6 +35,10 @@ export default defineComponent(({ name, template, schema }) => {
 				firstOp = "=="
 				secondOp = "!="
 			}
+
+			// =============================================== //
+			//                   Launch Events                 //
+			// =============================================== //
 
 			create({
 				[`launch_${name}_controller`]: {
@@ -92,6 +101,10 @@ export default defineComponent(({ name, template, schema }) => {
 				"minecraft:entity/events"
 			)
 
+			// =============================================== //
+			//                   Variants                      //
+			// =============================================== //
+
 			create({
 				[`variant_${name}`]: {
 					"minecraft:variant": {
@@ -100,6 +113,22 @@ export default defineComponent(({ name, template, schema }) => {
 				}
 			},
 				"minecraft:entity/component_groups"
+			)
+
+			// =============================================== //
+			//               Behaviour Animations              //
+			// =============================================== //
+
+			create({
+				[`launch_${name}`]: `animation.launch_${name}`
+			},
+				"minecraft:entity/description/animations"
+			)
+
+			create({
+				[`launch_${name}`]: `"q.has_rider && q.variant == ${i + 2}" && q.mark_variant >= ${tier}`
+			},
+				"minecraft:entity/description/scripts/animate"
 			)
 		})
 	})

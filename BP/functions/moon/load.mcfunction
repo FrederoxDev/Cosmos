@@ -5,8 +5,8 @@
 # Add moon tag, remove the launch tag
 # Clear player effects
 
-teleport @p 500 86 500
-tag @p add moon
-tag @p remove moon_launch
-effect @p clear
-summon cosmo:tier_1_rocket 500 86 500 
+teleport @a[tag=moon_launch] 500 86 500
+tag @a[tag=moon_launch] add moon
+tag @a[tag=moon_launch] remove moon_launch
+effect @a[tag=moon] clear
+summon cosmo:rocket 500 86 500 
