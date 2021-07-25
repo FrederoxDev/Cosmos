@@ -1,3 +1,17 @@
 {
-	"sound_definitions": {}
+	"format_version": "1.17.0",
+	"sound_definitions": {
+		"rocket_launch": {
+			"category": "ui",
+			"sounds": [
+				"sounds/rocket_launch"
+			]
+		},
+		"music.supernova": {
+			"category": "music",
+			"sounds": [
+				"sounds/supernova"
+			]
+		}
+	}
 }
