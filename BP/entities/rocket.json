@@ -56,9 +56,15 @@
         "has_collision": true,
         "has_gravity": true
       },
+      "minecraft:health": {
+        "value": 1
+      },
       "minecraft:collision_box": {
         "height": 2,
         "width": 1
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/rocket.json"
       },
       "minecraft:inventory": {
         "inventory_size": 2,
@@ -79,9 +85,9 @@
           },
           {
             "slot": 1,
-            "item": "minecraft:dirt",
+            "item": "cosmo:tier_1_module",
             "accepted_items": [
-              "minecraft:dirt"
+              "cosmo:tier_1_module"
             ],
             "on_equip": {
               "event": "upgrade_rocket"

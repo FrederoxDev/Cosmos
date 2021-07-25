@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cosmo:rocket_spawn_egg",
+                    "count": 1
+                }
+            ]
+        }
+    ]
+}

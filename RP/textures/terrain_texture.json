@@ -6,6 +6,9 @@
 	"texture_data": {
 		"cosmo_moon_rock": {
 			"textures": "textures/blocks/moon_rock"
+		},
+		"cosmo_oil": {
+			"textures": "textures/blocks/oil"
 		}
 	}
 }

@@ -27,6 +27,9 @@
 		},
 		"cosmo_fuel_tank": {
 			"textures": "textures/items/fuel_tank"
+		},
+		"cosmo_tier_1_module": {
+			"textures": "textures/items/tier_1_module"
 		}
 	}
 }

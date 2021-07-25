@@ -2,14 +2,14 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "cosmo:fuel_tank",
-      "category": "nature"
+      "identifier": "cosmo:tier_1_module",
+      "category": "equipment"
     },
     "components": {
       "minecraft:icon": {
-        "texture": "cosmo_fuel_tank"
+        "texture": "cosmo_tier_1_module"
       },
-      "minecraft:max_stack_size": 16
+      "minecraft:max_stack_size": 1
     }
   }
 }

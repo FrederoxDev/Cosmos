@@ -28,11 +28,15 @@
 		"size": [
 			28,
 			28
+		],
+		"offset": [
+			-4,
+			6
 		]
 	},
 	"text_watermark": {
 		"type": "label",
-		"text": "§dCosmos [UI TEST BUILD]\n§fBy Frederox",
+		"text": "§dCosmos [DEVELOPMENT BUILD]\n§fBy Frederox",
 		"color": [
 			1,
 			1,
@@ -45,7 +49,7 @@
 		"alpha": 1,
 		"text_alignment": "right",
 		"offset": [
-			-32,
+			-36,
 			6
 		]
 	},
