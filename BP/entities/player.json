@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.220",
+	"format_version": "1.17.0",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minecraft:player",
@@ -171,60 +171,54 @@
 							"value": true
 						}
 					],
-					"event": "minecraft:trigger_raid"
+					"event": "minecraft:trigger_raid",
 				}
-			}
-		},
-		"minecraft:damage_sensor": {
-			"triggers": [
-				{
-					"cause": "fatal",
-					"on_damage": {
-						"event": "cosmos:death"
-					}
-				}
-			]
-		}
-	},
-	"events": {
-		"cosmos:death": {
-			"run_command": {
-				"command": [
-					"tag @p remove moon"
-				]
-			}
-		},
-		"minecraft:gain_bad_omen": {
-			"add": {
-				"component_groups": [
-					"minecraft:add_bad_omen"
-				]
-			}
-		},
-		"minecraft:clear_add_bad_omen": {
-			"remove": {
-				"component_groups": [
-					"minecraft:add_bad_omen"
-				]
 			},
-			"add": {
-				"component_groups": [
-					"minecraft:clear_bad_omen_spell_effect"
-				]
+			"minecraft:on_death": {
+				"event": "death"
 			}
 		},
-		"minecraft:trigger_raid": {
-			"add": {
-				"component_groups": [
-					"minecraft:raid_trigger"
-				]
-			}
-		},
-		"minecraft:remove_raid_trigger": {
-			"remove": {
-				"component_groups": [
-					"minecraft:raid_trigger"
-				]
+		"events": {
+			"death": {
+				"run_command": {
+					"command": [
+						"tag @s remove moon",
+						"tag @s remove launch_moon"
+					]
+				}
+			},
+			"minecraft:gain_bad_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_bad_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_bad_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_bad_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
 			}
 		}
 	}
