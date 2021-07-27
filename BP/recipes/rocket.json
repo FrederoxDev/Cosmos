@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "rocket"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" X ",
+			" Y ",
+			" Z "
+		],
+		"key": {
+			"X": {
+				"item": "cosmo:rocket_cone"
+			},
+			"Y": {
+				"item": "cosmo:rocket_body"
+			},
+			"Z": {
+				"item": "cosmo:rocket_engine"
+			}
+		},
+		"result": [
+			{
+				"item": "spawn_egg",
+				"data": "q.get_actor_info_id('cosmo:rocket')"
+			}
+		]
+	}
+}

@@ -28,8 +28,20 @@
 		"cosmo_fuel_tank": {
 			"textures": "textures/items/fuel_tank"
 		},
+		"cosmo_empty_fuel_tank": {
+			"textures": "textures/items/empty_fuel_tank"
+		},
 		"cosmo_tier_1_module": {
 			"textures": "textures/items/tier_1_module"
+		},
+		"cosmo_rocket_cone": {
+			"textures": "textures/items/rocket/rocket_cone"
+		},
+		"cosmo_rocket_body": {
+			"textures": "textures/items/rocket/rocket_body"
+		},
+		"cosmo_rocket_engine": {
+			"textures": "textures/items/rocket/rocket_engine"
 		}
 	}
 }

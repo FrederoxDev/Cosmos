@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:empty_fuel_tank"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"XOX",
+			"XXX"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"O": {
+				"item": "minecraft:red_dye"
+			}
+		},
+		"result": [
+			{
+				"item": "cosmo:empty_fuel_tank",
+				"count": 2
+			}
+		]
+	}
+}

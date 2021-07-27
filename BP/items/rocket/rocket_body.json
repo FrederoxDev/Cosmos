@@ -2,14 +2,14 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "cosmo:fuel_tank",
-      "category": "equipment"
+      "identifier": "cosmo:rocket_body",
+      "category": "nature"
     },
     "components": {
       "minecraft:icon": {
-        "texture": "cosmo_fuel_tank"
+        "texture": "cosmo_rocket_body"
       },
-      "minecraft:max_stack_size": 16
+      "minecraft:max_stack_size": 1
     }
   }
 }

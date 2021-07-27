@@ -10,10 +10,16 @@ item.cosmo:space_suit_boots=Space Boots
 item.spawn_egg.entity.cosmo:rocket.name=Spawn Rocket
 item.cosmo:rocket_egg=Rocket
 item.cosmo:fuel_tank=Fuel Tank
+item.cosmo:empty_fuel_tank=Empty Fuel Tank
 
 action.hint.exit.cosmo:rocket=Exit tier I rocket
 action.interact.tier_1_rocket=Enter Tier 1 Rocket
 
 entity.cosmo:rocket.name=Rocket
 tile.cosmo:oil.name=Oil
+
+## Rocket Crafting items/ Upgrades
 item.cosmo:tier_1_module=Tier I Module
+item.cosmo:rocket_cone=Nose Cone
+item.cosmo:rocket_body=Rocket Body
+item.cosmo:rocket_engine=Rocket Engine
