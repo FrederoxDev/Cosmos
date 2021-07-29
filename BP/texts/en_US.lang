@@ -1,2 +1,32 @@
 pack.name=Cosmos BP
 pack.description=Cosmos is a space addon!
+
+## Space Suit
+item.cosmo:space_suit_helmet=Space Helmet
+item.cosmo:space_suit_chestplate=Space Chestplate
+item.cosmo:space_suit_leggings=Space Leggings
+item.cosmo:space_suit_boots=Space Boots
+
+## Space Rocket
+action.hint.exit.cosmo:rocket=Exit tier I rocket
+action.interact.tier_1_launch=Enter Tier 1 Rocket
+entity.cosmo:rocket.name=Rocket
+
+item.spawn_egg.entity.cosmo:rocket.name=Spawn Rocket
+item.cosmo:rocket_egg=Rocket
+item.cosmo:tier_1_module=Tier I Module
+item.cosmo:rocket_cone=Nose Cone
+item.cosmo:rocket_body=Rocket Body
+item.cosmo:rocket_engine=Rocket Engine
+
+## Oil
+tile.cosmo:oil.name=Oil
+item.cosmo:fuel_tank=Fuel Tank
+item.cosmo:empty_fuel_tank=Empty Fuel Tank
+
+## The Moon
+tile.cosmo:moon_rock.name=Moon Rock
+
+## Mobs
+item.spawn_egg.entity.cosmo:space_zombie.name=Spawn Space Zombie
+entity.cosmo:space_zombie.name=Space Zombie

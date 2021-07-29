@@ -42,6 +42,9 @@
 		},
 		"cosmo_rocket_engine": {
 			"textures": "textures/items/rocket/rocket_engine"
+		},
+		"cosmo_space_zombie_egg": {
+			"textures": "textures/items/space_zombie"
 		}
 	}
 }

@@ -6,8 +6,8 @@
             "animation_length": 1,
             "timeline": {
                 "0.0": [
-                    "/title @p[tag=moon] actionbar No oxygen!",
-                    "/effect @p[tag=moon] wither 1 1"
+                    "/title @s[tag=moon] actionbar No oxygen!",
+                    "/effect @s[tag=moon] wither 1 1"
                 ]
             }
         }

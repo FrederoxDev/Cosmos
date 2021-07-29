@@ -97,7 +97,7 @@
       },
       "minecraft:rideable": {
         "controlling_seat": 1,
-        "interact_text": "action.interact.tier_1_launch",
+        "interact_text": "Enter Rocket",
         "seats": [
           {
             "position": [
@@ -119,6 +119,12 @@
             "tier": 1
           }
         ]
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
       }
     },
     "events": {

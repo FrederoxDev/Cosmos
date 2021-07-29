@@ -10,7 +10,7 @@
 structure load mystructure:end_module 0 0 0
 
 tickingarea add 490 68 490 490 68 490 moon
-tickingarea add 500 86 500 500 86 500 moon_rocket
+tickingarea add 502 120 540 502 120 540 moon_rocket
 
 tickingarea add 0 0 0 2 3 2 end_cmd
 
