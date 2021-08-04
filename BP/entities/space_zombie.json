@@ -30,7 +30,6 @@
       }
     },
     "components": {
-      "minecraft:behavior.stalk_and_pounce_on_target": {},
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:nameable": {},
       // Zombie Components

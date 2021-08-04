@@ -4,3 +4,4 @@ fill ~ 1 ~ ~ 1 ~ end_portal
 teleport @p ~ 1 ~
 
 tag @p remove moon 
+tag @p remove mars

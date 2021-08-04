@@ -9,4 +9,5 @@ teleport @a[tag=moon_launch] 502 120 540
 tag @a[tag=moon_launch] add moon
 tag @a[tag=moon_launch] remove moon_launch
 effect @a[tag=moon] clear
+music play music.supernova
 summon cosmo:rocket 502 120 540

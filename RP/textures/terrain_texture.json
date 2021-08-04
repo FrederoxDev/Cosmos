@@ -9,6 +9,9 @@
 		},
 		"cosmo_oil": {
 			"textures": "textures/blocks/oil"
+		},
+		"cosmo_mars_rock": {
+			"textures": "textures/blocks/mars_rock"
 		}
 	}
 }

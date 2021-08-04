@@ -10,5 +10,9 @@
 	},
 	"cosmo:oil": {
 		"sound": "honey_block"
+	},
+	"cosmo:mars_rock": {
+		"textures": "cosmo_mars_rock",
+		"sound": "stone"
 	}
 }

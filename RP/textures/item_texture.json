@@ -45,6 +45,9 @@
 		},
 		"cosmo_space_zombie_egg": {
 			"textures": "textures/items/space_zombie"
+		},
+		"cosmo_diamond_drill": {
+			"textures": "textures/items/diamond_drill"
 		}
 	}
 }

@@ -19,6 +19,9 @@ item.cosmo:rocket_cone=Nose Cone
 item.cosmo:rocket_body=Rocket Body
 item.cosmo:rocket_engine=Rocket Engine
 
+## Tools
+item.cosmo:diamond_drill=Diamond Drill
+
 ## Oil
 tile.cosmo:oil.name=Oil
 item.cosmo:fuel_tank=Fuel Tank
@@ -26,6 +29,9 @@ item.cosmo:empty_fuel_tank=Empty Fuel Tank
 
 ## The Moon
 tile.cosmo:moon_rock.name=Moon Rock
+
+## Mars
+tile.cosmo:mars_rock.name=Mars Rock
 
 ## Mobs
 item.spawn_egg.entity.cosmo:space_zombie.name=Spawn Space Zombie
