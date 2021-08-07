@@ -3,13 +3,16 @@
   "minecraft:item": {
     "description": {
       "identifier": "cosmo:rocket_cone",
-      "category": "nature"
+      "category": "items"
     },
     "components": {
       "minecraft:icon": {
         "texture": "cosmo_rocket_cone"
       },
-      "minecraft:max_stack_size": 1
+      "minecraft:max_stack_size": 1,
+      "minecraft:display_name": {
+        "value": "Rocket Cone\n§d[Cosmos]"
+      }
     }
   }
 }

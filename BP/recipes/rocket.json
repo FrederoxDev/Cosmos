@@ -20,7 +20,7 @@
 				"item": "cosmo:rocket_body"
 			},
 			"Z": {
-				"item": "cosmo:rocket_engine"
+				"item": "cosmo:rocket_thruster"
 			}
 		},
 		"result": [

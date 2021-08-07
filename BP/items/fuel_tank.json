@@ -9,7 +9,10 @@
       "minecraft:icon": {
         "texture": "cosmo_fuel_tank"
       },
-      "minecraft:max_stack_size": 16
+      "minecraft:max_stack_size": 16,
+      "minecraft:display_name": {
+        "value": "Fuel Tank\n§d[Cosmos]"
+      }
     }
   }
 }

@@ -31,8 +31,8 @@
 		"cosmo_empty_fuel_tank": {
 			"textures": "textures/items/empty_fuel_tank"
 		},
-		"cosmo_tier_1_module": {
-			"textures": "textures/items/tier_1_module"
+		"cosmo_tier_2_upgrade": {
+			"textures": "textures/items/tier_2_upgrade"
 		},
 		"cosmo_rocket_cone": {
 			"textures": "textures/items/rocket/rocket_cone"

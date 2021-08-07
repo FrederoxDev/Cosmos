@@ -85,9 +85,9 @@
           },
           {
             "slot": 1,
-            "item": "cosmo:tier_1_module",
+            "item": "cosmo:tier_2_upgrade",
             "accepted_items": [
-              "cosmo:tier_1_module"
+              "cosmo:tier_2_upgrade"
             ],
             "on_equip": {
               "event": "upgrade_rocket"

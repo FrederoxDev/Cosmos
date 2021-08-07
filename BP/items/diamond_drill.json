@@ -2,10 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"category": "equipment",
-			"identifier": "cosmo:diamond_drill"
+			"identifier": "cosmo:diamond_drill",
+			"category": "items"
 		},
 		"components": {
+			"minecraft:display_name": {
+				"value": "Diamond Drill\n§d[Cosmos]"
+			},
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.pickaxe"
 			},

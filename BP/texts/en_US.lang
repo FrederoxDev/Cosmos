@@ -14,7 +14,7 @@ entity.cosmo:rocket.name=Rocket
 
 item.spawn_egg.entity.cosmo:rocket.name=Spawn Rocket
 item.cosmo:rocket_egg=Rocket
-item.cosmo:tier_1_module=Tier I Module
+item.cosmo:tier_2_upgrade=Tier I Module
 item.cosmo:rocket_cone=Nose Cone
 item.cosmo:rocket_body=Rocket Body
 item.cosmo:rocket_engine=Rocket Engine
@@ -24,7 +24,7 @@ item.cosmo:diamond_drill=Diamond Drill
 
 ## Oil
 tile.cosmo:oil.name=Oil
-item.cosmo:fuel_tank=Fuel Tank
+item.cosmo:fuel_tank=Fuel Tank\nCosmos
 item.cosmo:empty_fuel_tank=Empty Fuel Tank
 
 ## The Moon

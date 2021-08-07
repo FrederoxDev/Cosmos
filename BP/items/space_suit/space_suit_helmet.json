@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "cosmo:space_suit_helmet",
-      "category": "equipment"
+      "category": "items"
     },
     "components": {
       "minecraft:max_stack_size": 1,
@@ -24,7 +24,10 @@
       "minecraft:wearable": {
         "slot": "slot.armor.head"
       },
-      "tag:space_suit": {}
+      "tag:space_suit": {},
+      "minecraft:display_name": {
+        "value": "Space Helmet\n§d[Cosmos]"
+      }
     }
   }
 }

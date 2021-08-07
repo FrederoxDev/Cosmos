@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "cosmo:space_suit_boots",
-      "category": "equipment"
+      "category": "items"
     },
     "components": {
       "minecraft:max_stack_size": 1,
@@ -24,7 +24,10 @@
       "minecraft:wearable": {
         "slot": "slot.armor.feet"
       },
-      "tag:space_suit": {}
+      "tag:space_suit": {},
+      "minecraft:display_name": {
+        "value": "Space Boots\n§d[Cosmos]"
+      }
     }
   }
 }
