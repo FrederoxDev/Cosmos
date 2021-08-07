@@ -7,7 +7,9 @@
             "timeline": {
                 "0.0": [
                     "/title @s[tag=moon] actionbar No oxygen!",
-                    "/effect @s[tag=moon] wither 1 1"
+                    "/effect @s[tag=moon] wither 1 1",
+                    "/title @s[tag=mars] actionbar No oxygen!",
+                    "/effect @s[tag=mars] wither 1 1"
                 ]
             }
         }
