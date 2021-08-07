@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.17.0",
   "minecraft:entity": {
     "description": {
       "identifier": "cosmo:space_zombie",
@@ -89,208 +89,10 @@
       "minecraft:shareables": {
         "items": [
           {
-            "item": "minecraft:netherite_sword",
+            "item": "cosmo:space_suit_helmet",
             "want_amount": 1,
             "surplus_amount": 1,
-            "priority": 0
-          },
-          {
-            "item": "minecraft:diamond_sword",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 1
-          },
-          {
-            "item": "minecraft:iron_sword",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 2
-          },
-          {
-            "item": "minecraft:stone_sword",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 3
-          },
-          {
-            "item": "minecraft:golden_sword",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 4
-          },
-          {
-            "item": "minecraft:wooden_sword",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 5
-          },
-          {
-            "item": "minecraft:netherite_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 0
-          },
-          {
-            "item": "minecraft:diamond_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 1
-          },
-          {
-            "item": "minecraft:iron_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 2
-          },
-          {
-            "item": "minecraft:chainmail_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 3
-          },
-          {
-            "item": "minecraft:golden_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 4
-          },
-          {
-            "item": "minecraft:leather_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 5
-          },
-          {
-            "item": "minecraft:turtle_helmet",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 6
-          },
-          {
-            "item": "minecraft:skull:0",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 7
-          },
-          {
-            "item": "minecraft:skull:1",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 7
-          },
-          {
-            "item": "minecraft:carved_pumpkin",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 7
-          },
-          {
-            "item": "minecraft:netherite_chestplate",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 0
-          },
-          {
-            "item": "minecraft:diamond_chestplate",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 1
-          },
-          {
-            "item": "minecraft:iron_chestplate",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 2
-          },
-          {
-            "item": "minecraft:chainmail_chestplate",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 3
-          },
-          {
-            "item": "minecraft:golden_chestplate",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 4
-          },
-          {
-            "item": "minecraft:leather_chestplate",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 5
-          },
-          {
-            "item": "minecraft:netherite_leggings",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 0
-          },
-          {
-            "item": "minecraft:diamond_leggings",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 1
-          },
-          {
-            "item": "minecraft:iron_leggings",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 2
-          },
-          {
-            "item": "minecraft:chainmail_leggings",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 3
-          },
-          {
-            "item": "minecraft:golden_leggings",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 4
-          },
-          {
-            "item": "minecraft:leather_leggings",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 5
-          },
-          {
-            "item": "minecraft:netherite_boots",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 0
-          },
-          {
-            "item": "minecraft:diamond_boots",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 1
-          },
-          {
-            "item": "minecraft:iron_boots",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 2
-          },
-          {
-            "item": "minecraft:chainmail_boots",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 3
-          },
-          {
-            "item": "minecraft:golden_boots",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 4
-          },
-          {
-            "item": "minecraft:leather_boots",
-            "want_amount": 1,
-            "surplus_amount": 1,
-            "priority": 5
+            "priority": 10000
           }
         ]
       },
@@ -311,14 +113,6 @@
         "search_height": 2,
         "goal_radius": 1.14,
         "interval": 20
-      },
-      "minecraft:behavior.pickup_items": {
-        "priority": 6,
-        "max_dist": 3,
-        "goal_radius": 2,
-        "speed_multiplier": 1.0,
-        "pickup_based_on_chance": true,
-        "can_pickup_any_item": true
       },
       "minecraft:behavior.random_stroll": {
         "priority": 7,
@@ -407,7 +201,10 @@
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:conditional_bandwidth_optimization": {}
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:equipment": {
+        "table": "loot_tables/space_zombie_equipment.json"
+      }
     },
     "events": {
       "minecraft:entity_spawned": {
