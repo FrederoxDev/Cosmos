@@ -1,6 +1,7 @@
-teleport @a[tag=mars_launch] -440 150 -475
-tag @a[tag=mars_launch] add mars
-tag @a[tag=mars_launch] remove mars_launch
-effect @a[tag=mars] clear
+teleport @s -440 150 -475
+tag @s add mars
+tag @s remove mars_launch
+effect @s clear
 music play music.supernova
+fog @s push cosmo:mars mars
 summon cosmo:rocket -440 120 -475

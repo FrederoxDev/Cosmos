@@ -15,7 +15,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
-				"max_durability": 300
+				"max_durability": 600
 			},
 			"minecraft:icon": {
 				"texture": "cosmo_diamond_drill"
@@ -24,9 +24,9 @@
 				"repair_items": [
 					{
 						"items": [
-							"cosmo:diamond_drill"
+							"minecraft:diamond"
 						],
-						"repair_amount": 20
+						"repair_amount": 200
 					}
 				]
 			},

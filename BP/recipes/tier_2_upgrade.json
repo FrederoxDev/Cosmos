@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:tier_2_upgrade"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"YXY",
+			"YZY",
+			"YXY"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:amethyst_shard"
+			},
+			"Y": {
+				"item": "cosmo:metal_sheet"
+			},
+			"Z": {
+				"item": "cosmo:moon_rock"
+			}
+		},
+		"result": {
+			"item": "cosmo:tier_2_upgrade"
+		}
+	}
+}

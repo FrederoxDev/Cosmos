@@ -3,5 +3,6 @@ fill ~ 1 ~ ~ 1 ~ end_portal
 
 teleport @p ~ 1 ~
 
+fog @p remove mars
 tag @p remove moon 
 tag @p remove mars

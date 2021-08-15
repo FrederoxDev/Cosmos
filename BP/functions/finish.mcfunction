@@ -16,8 +16,8 @@ tickingarea add -440 120 -475 -440 120 -475 mars_rocket
 
 tickingarea add 0 0 0 2 3 2 end_cmd
 
-structure load moon_island 490 68 490
-structure load mars_island -490 68 -490
+structure load mystructure:moon_island 490 68 490
+structure load mystructure:mars_island -490 68 -490
 
 fill ~-1 0 ~-1 ~1 3 ~1 bedrock 1 hollow
 fill ~ 1 ~ ~ 1 ~ end_portal

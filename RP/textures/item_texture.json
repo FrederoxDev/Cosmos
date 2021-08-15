@@ -48,6 +48,9 @@
 		},
 		"cosmo_diamond_drill": {
 			"textures": "textures/items/diamond_drill"
+		},
+		"cosmo_metal_sheet": {
+			"textures": "textures/items/metal_sheet"
 		}
 	}
 }

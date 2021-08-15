@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:space_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"YXY",
+			"X X",
+			"X X"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"Y": {
+				"item": "minecraft:iron_block"
+			}
+		},
+		"result": {
+			"item": "cosmo:space_suit_leggings",
+			"count": 1
+		}
+	}
+}

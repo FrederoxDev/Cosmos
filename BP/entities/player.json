@@ -183,7 +183,8 @@
 				"run_command": {
 					"command": [
 						"tag @s remove moon",
-						"tag @s remove launch_moon"
+						"tag @s remove launch_moon",
+						"fog @s remove mars"
 					]
 				}
 			},

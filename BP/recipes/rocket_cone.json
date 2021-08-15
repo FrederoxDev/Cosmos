@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:rocket_cone"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" X ",
+			" Y ",
+			"YYY"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:amethyst_shard"
+			},
+			"Y": {
+				"item": "cosmo:metal_sheet"
+			}
+		},
+		"result": {
+			"item": "cosmo:rocket_cone"
+		}
+	}
+}
