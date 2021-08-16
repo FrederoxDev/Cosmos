@@ -1,0 +1,62 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cosmo:basin_molten_iron",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.basin_molten_iron",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cosmo_basin_molten_iron",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:block_light_emission": 1,
+      "minecraft:block_light_absorption": 0,
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:ticking": {
+        "range": [
+          0,
+          35
+        ],
+        "looping": true,
+        "on_tick": {
+          "event": "fill"
+        }
+      },
+      "minecraft:loot": "loot_tables/empty_basin.json"
+    },
+    "events": {
+      "fill": {
+        "set_block_at_pos": {
+          "block_type": "cosmo:basin_metal_sheet"
+        }
+      }
+    }
+  }
+}

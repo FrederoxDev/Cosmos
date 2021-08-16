@@ -12,6 +12,18 @@
 		},
 		"cosmo_mars_rock": {
 			"textures": "textures/blocks/mars_rock"
+		},
+		"cosmo_basin_empty": {
+			"textures": "textures/blocks/basin/basin_empty"
+		},
+		"cosmo_basin_molten_iron": {
+			"textures": "textures/blocks/basin/basin_molten_iron"
+		},
+		"cosmo_basin_metal_sheet": {
+			"textures": "textures/blocks/basin/basin_metal_sheet"
+		},
+		"cosmo_basin_iron_ingot": {
+			"textures": "textures/blocks/basin/basin_iron_ingot"
 		}
 	}
 }

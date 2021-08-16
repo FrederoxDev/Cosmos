@@ -1,0 +1,53 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cosmo:basin_empty"
+    },
+    "components": {
+      "minecraft:geometry": "geometry.basin_empty",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cosmo_basin_empty",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:on_interact": {
+        "condition": "query.get_equipped_item_name('main_hand') == 'iron_ingot'",
+        "event": "fill"
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      }
+    },
+    "events": {
+      "fill": {
+        "set_block": {
+          "block_type": "cosmo:basin_iron_ingot"
+        },
+        "decrement_stack": {}
+      }
+    }
+  }
+}

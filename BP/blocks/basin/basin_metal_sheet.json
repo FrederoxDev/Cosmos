@@ -1,0 +1,66 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cosmo:basin_metal_sheet",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.basin_metal_sheet",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cosmo_basin_metal_sheet",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:on_interact": {
+        "event": "fill"
+      },
+      "minecraft:loot": "loot_tables/empty_basin.json",
+      "minecraft:on_player_destroyed": {
+        "event": "destroyed"
+      }
+    },
+    "events": {
+      "destroyed": {
+        "spawn_loot": {
+          "table": "loot_tables/metal_sheet.json"
+        }
+      },
+      "fill": {
+        "set_block_at_pos": {
+          "block_type": "cosmo:basin_empty"
+        },
+        "run_command": {
+          "command": [
+            "give @p cosmo:metal_sheet"
+          ]
+        }
+      }
+    }
+  }
+}

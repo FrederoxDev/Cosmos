@@ -1,0 +1,217 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.basin_metal_sheet",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "basin",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								4,
+								0,
+								4
+							],
+							"size": [
+								4,
+								4,
+								4
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-8,
+								4,
+								-8
+							],
+							"size": [
+								16,
+								1,
+								16
+							],
+							"uv": [
+								0,
+								13
+							]
+						},
+						{
+							"origin": [
+								6,
+								5,
+								-8
+							],
+							"size": [
+								2,
+								11,
+								16
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-6,
+								5,
+								6
+							],
+							"size": [
+								12,
+								11,
+								2
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-6,
+								5,
+								-8
+							],
+							"size": [
+								12,
+								11,
+								2
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-6,
+								11,
+								-6
+							],
+							"size": [
+								12,
+								2,
+								12
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-8,
+								5,
+								-8
+							],
+							"size": [
+								2,
+								11,
+								16
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-8,
+								0,
+								4
+							],
+							"size": [
+								4,
+								4,
+								4
+							],
+							"uv": [
+								0,
+								0
+							]
+						},
+						{
+							"origin": [
+								-8,
+								0,
+								-8
+							],
+							"size": [
+								4,
+								4,
+								4
+							],
+							"uv": [
+								0,
+								8
+							]
+						},
+						{
+							"origin": [
+								4,
+								0,
+								-8
+							],
+							"size": [
+								4,
+								4,
+								4
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "metal_sheet",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6,
+								13,
+								-6
+							],
+							"size": [
+								12,
+								1,
+								12
+							],
+							"uv": [
+								5,
+								83
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
