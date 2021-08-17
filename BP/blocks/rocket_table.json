@@ -1,0 +1,49 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cosmo:rocket_table",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.rocket_table",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cosmo_rocket_table",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:crafting_table": {
+        "crafting_tags": [
+          "rocket_table"
+        ],
+        "grid_size": 3,
+        "custom_description": "Rocket Table"
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          16,
+          16
+        ]
+      }
+    }
+  }
+}

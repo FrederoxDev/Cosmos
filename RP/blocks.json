@@ -26,5 +26,8 @@
 	},
 	"cosmo:basin_iron_ingot": {
 		"sound": "stone"
+	},
+	"cosmo:rocket_table": {
+		"sound": "metal"
 	}
 }

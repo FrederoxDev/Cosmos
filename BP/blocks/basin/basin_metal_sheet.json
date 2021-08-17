@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.17.0",
   "minecraft:block": {
     "description": {
       "identifier": "cosmo:basin_metal_sheet",
@@ -9,7 +9,7 @@
       "minecraft:geometry": "geometry.basin_metal_sheet",
       "minecraft:material_instances": {
         "*": {
-          "texture": "cosmo_basin_metal_sheet",
+          "texture": "cosmo_basin",
           "render_method": "alpha_test"
         }
       },
@@ -55,10 +55,8 @@
         "set_block_at_pos": {
           "block_type": "cosmo:basin_empty"
         },
-        "run_command": {
-          "command": [
-            "give @p cosmo:metal_sheet"
-          ]
+        "spawn_loot": {
+          "table": "loot_tables/metal_sheet.json"
         }
       }
     }

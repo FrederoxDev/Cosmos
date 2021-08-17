@@ -17,8 +17,8 @@ item.spawn_egg.entity.cosmo:rocket.name=Spawn Rocket §d[Cosmos]
 tile.cosmo:oil.name=Oil §d[Cosmos]
 tile.cosmo:moon_rock.name=Moon Rock §d[Cosmos]
 tile.cosmo:mars_rock.name=Mars Rock §d[Cosmos]
-
-tile.cosmo:basin_empty.name=Empty Basin
+tile.cosmo:rocket_table.name=Rocket Table §d[Cosmos]
+tile.cosmo:basin_empty.name=Empty Basin §d[Cosmos]
 
 ## ==== Rocket Interactions ==== ##
 action.hint.exit.cosmo:rocket=Exit tier I rocket

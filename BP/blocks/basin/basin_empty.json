@@ -8,7 +8,7 @@
       "minecraft:geometry": "geometry.basin_empty",
       "minecraft:material_instances": {
         "*": {
-          "texture": "cosmo_basin_empty",
+          "texture": "cosmo_basin",
           "render_method": "alpha_test"
         }
       },
@@ -45,6 +45,11 @@
       "fill": {
         "set_block": {
           "block_type": "cosmo:basin_iron_ingot"
+        },
+        "run_command": {
+          "command": [
+            "playsound block.itemframe.add_item @a ~ ~ ~"
+          ]
         },
         "decrement_stack": {}
       }

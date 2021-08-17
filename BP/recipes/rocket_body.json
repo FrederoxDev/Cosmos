@@ -5,7 +5,7 @@
 			"identifier": "cosmo:rocket_thruster"
 		},
 		"tags": [
-			"crafting_table"
+			"rocket_table"
 		],
 		"pattern": [
 			"XXX",

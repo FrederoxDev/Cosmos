@@ -5,7 +5,7 @@
 			"identifier": "cosmo:rocket_cone"
 		},
 		"tags": [
-			"crafting_table"
+			"rocket_table"
 		],
 		"pattern": [
 			" X ",

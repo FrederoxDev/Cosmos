@@ -2,26 +2,27 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cosmo:rocket_body"
+			"identifier": "cosmo:rocket_table"
 		},
 		"tags": [
-			"rocket_table"
+			"crafting_table"
 		],
 		"pattern": [
 			"XXX",
-			"XYX",
-			"XXX"
+			"OXO",
+			"OOO"
 		],
 		"key": {
-			"X": {
+			"O": {
 				"item": "cosmo:metal_sheet"
 			},
-			"Y": {
-				"item": "minecraft:tinted_glass"
+			"X": {
+				"item": "minecraft:lapis_block"
 			}
 		},
 		"result": {
-			"item": "cosmo:rocket_body"
+			"item": "cosmo:rocket_table",
+			"count": 1
 		}
 	}
 }

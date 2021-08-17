@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "cosmo:rocket_body",
-      "category": "items"
+      "category": "equipment"
     },
     "components": {
       "minecraft:icon": {

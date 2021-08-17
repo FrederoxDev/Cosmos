@@ -9,7 +9,7 @@
       "minecraft:geometry": "geometry.basin_molten_iron",
       "minecraft:material_instances": {
         "*": {
-          "texture": "cosmo_basin_molten_iron",
+          "texture": "cosmo_basin",
           "render_method": "alpha_test"
         }
       },
@@ -55,7 +55,12 @@
       "fill": {
         "set_block_at_pos": {
           "block_type": "cosmo:basin_metal_sheet"
-        }
+        },
+        "run_command": {
+          "command": [
+            "playsound block.blastfurnace.fire_crackle @a ~ ~ ~"
+          ]
+        },
       }
     }
   }
