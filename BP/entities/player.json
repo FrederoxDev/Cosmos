@@ -184,6 +184,8 @@
 					"command": [
 						"tag @s remove moon",
 						"tag @s remove launch_moon",
+						"tag @s remove mars",
+						"tag @s remove launch_mars",
 						"fog @s remove mars"
 					]
 				}

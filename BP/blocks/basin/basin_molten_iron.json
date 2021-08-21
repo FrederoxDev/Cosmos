@@ -48,8 +48,7 @@
         "on_tick": {
           "event": "fill"
         }
-      },
-      "minecraft:loot": "loot_tables/empty_basin.json"
+      }
     },
     "events": {
       "fill": {

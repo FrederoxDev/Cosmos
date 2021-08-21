@@ -3,9 +3,9 @@ effect @e[tag=moon] slow_falling 3 1 true
 effect @e[tag=moon] jump_boost 3 2 true
 
 # Summon mobs
-execute @e[tag=moon] ~ ~ ~ tp @e[type=enderman, r=64, c=1 ] ~ 0 ~
-execute @e[tag=moon] ~ ~ ~ execute @e[type=enderman, r=64, c=1 ] ~ ~ ~ summon cosmo:space_zombie
+execute @e[tag=moon] ~ ~ ~ kill @e[type=enderman, r=64, c=1]
 execute @e[tag=moon] ~ ~ ~ kill @e[type=item, name="Ender Pearl", r=120]
+execute @e[tag=moon] ~ ~ ~ execute @e[type=enderman, r=64, c=1 ] ~ ~ ~ summon cosmo:space_zombie
 
 tag @e[type=cosmo:space_zombie, tag=!moon] add moon
 

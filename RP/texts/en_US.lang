@@ -18,7 +18,11 @@ tile.cosmo:oil.name=Oil §d[Cosmos]
 tile.cosmo:moon_rock.name=Moon Rock §d[Cosmos]
 tile.cosmo:mars_rock.name=Mars Rock §d[Cosmos]
 tile.cosmo:rocket_table.name=Rocket Table §d[Cosmos]
+
 tile.cosmo:basin_empty.name=Empty Basin §d[Cosmos]
+tile.cosmo:basin_iron_ingot.name=Basin with Iron §d[Cosmos]
+tile.cosmo:basin_metal_sheet.name=Basin with Metal Sheet §d[Cosmos]
+tile.cosmo:basin_molten_iron.name=Basin with Molten Metal §d[Cosmos]
 
 ## ==== Rocket Interactions ==== ##
 action.hint.exit.cosmo:rocket=Exit tier I rocket

@@ -36,13 +36,9 @@
           16
         ]
       },
-      "minecraft:loot": "loot_tables/empty_basin.json",
       "minecraft:on_interact": {
         "condition": "query.get_equipped_item_name('main_hand') == 'flint_and_steel'",
         "event": "fill"
-      },
-      "minecraft:on_player_destroyed": {
-        "event": "destroyed"
       }
     },
     "events": {
@@ -55,11 +51,6 @@
             "playsound fire.ignite @a ~ ~ ~"
           ]
         },
-      },
-      "destroyed": {
-        "spawn_loot": {
-          "table": "loot_tables/iron_ingot.json"
-        }
       }
     }
   }

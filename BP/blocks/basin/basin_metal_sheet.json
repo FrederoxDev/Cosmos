@@ -39,18 +39,9 @@
       },
       "minecraft:on_interact": {
         "event": "fill"
-      },
-      "minecraft:loot": "loot_tables/empty_basin.json",
-      "minecraft:on_player_destroyed": {
-        "event": "destroyed"
       }
     },
     "events": {
-      "destroyed": {
-        "spawn_loot": {
-          "table": "loot_tables/metal_sheet.json"
-        }
-      },
       "fill": {
         "set_block_at_pos": {
           "block_type": "cosmo:basin_empty"

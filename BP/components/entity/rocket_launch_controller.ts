@@ -95,7 +95,7 @@ export default defineComponent(({ name, template, schema }) => {
 					"run_command": {
 						"command": [
 							`execute @p ~ ~ ~ function ${name}/launch`,
-							"kill @s"
+							"tp @s ~ -2 ~"
 						]
 					}
 				}
