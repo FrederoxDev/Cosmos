@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:space_helmet"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"YXY",
+			"XZX",
+			"   "
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"Y": {
+				"item": "minecraft:iron_block"
+			},
+			"Z": {
+				"item": "minecraft:tinted_glass"
+			}
+		},
+		"result": {
+			"item": "cosmo:space_suit_helmet",
+			"count": 1
+		}
+	}
+}

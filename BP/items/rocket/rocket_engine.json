@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cosmo:rocket_thruster",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "cosmo_rocket_engine"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:display_name": {
+        "value": "Rocket Thruster\n§d[Cosmos]"
+      }
+    }
+  }
+}

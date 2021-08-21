@@ -1,0 +1,33 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cosmo:space_suit_leggings",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 125,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:icon": {
+        "texture": "cosmo_space_suit_leggings"
+      },
+      "minecraft:render_offsets": "leggings",
+      "minecraft:armor": {
+        "protection": 5
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.legs"
+      },
+      "tag:space_suit": {},
+      "minecraft:display_name": {
+        "value": "Space Leggings\n§d[Cosmos]"
+      }
+    }
+  }
+}

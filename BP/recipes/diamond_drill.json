@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:diamond_drill"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"OXX",
+			" X ",
+			"   "
+		],
+		"key": {
+			"O": {
+				"item": "minecraft:iron_ingot"
+			},
+			"X": {
+				"item": "minecraft:diamond"
+			}
+		},
+		"result": {
+			"item": "cosmo:diamond_drill",
+			"count": 1
+		}
+	}
+}

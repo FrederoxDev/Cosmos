@@ -1,0 +1,68 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cosmo:oil",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:geometry": "geometry.oil",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "cosmo_oil",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          15,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          0,
+          0,
+          0
+        ]
+      },
+      "minecraft:breathability": "air",
+      "minecraft:block_light_absorption": 0,
+      "minecraft:friction": 1,
+      "minecraft:preventsjumping": true,
+      "minecraft:map_color": "#000000",
+      "minecraft:unwalkable": true,
+      "minecraft:immovable": true,
+      "minecraft:flammable": {
+        "burn_odds": 100,
+        "flame_odds": 800
+      },
+      "minecraft:explosion_resistance": 1,
+      "minecraft:on_interact": {
+        "condition": "query.get_equipped_item_name('main_hand') == 'empty_fuel_tank'",
+        "event": "fuel_tank"
+      },
+      "minecraft:loot": "loot_tables/empty.json"
+    },
+    "events": {
+      "fuel_tank": {
+        "spawn_loot": {
+          "table": "loot_tables/oil.json"
+        },
+        "decrement_stack": {},
+        "die": {}
+      }
+    }
+  }
+}

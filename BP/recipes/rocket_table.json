@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:rocket_table"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"OXO",
+			"OOO"
+		],
+		"key": {
+			"O": {
+				"item": "cosmo:metal_sheet"
+			},
+			"X": {
+				"item": "minecraft:lapis_block"
+			}
+		},
+		"result": {
+			"item": "cosmo:rocket_table",
+			"count": 1
+		}
+	}
+}

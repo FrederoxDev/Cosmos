@@ -1,0 +1,20 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Cosmos",
+	"namespace": "cosmo",
+	"author": "Frederox",
+	"targetVersion": "1.17.10",
+	"description": "Cosmos is a space addon!",
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"experimentalGameplay": {
+		"enableGameTestFramework": false,
+		"additionalModdingCapabilities": false,
+		"cavesAndCliffs": true,
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true
+	}
+}

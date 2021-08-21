@@ -1,0 +1,12 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "cosmo:mars_rock",
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:destroy_time": 7.5
+    }
+  }
+}

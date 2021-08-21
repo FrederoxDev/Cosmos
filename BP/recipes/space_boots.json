@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "cosmo:space_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"   ",
+			"Y Y",
+			"X X"
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:iron_ingot"
+			},
+			"Y": {
+				"item": "minecraft:iron_block"
+			}
+		},
+		"result": {
+			"item": "cosmo:space_suit_boots",
+			"count": 1
+		}
+	}
+}

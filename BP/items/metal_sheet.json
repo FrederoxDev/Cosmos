@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cosmo:metal_sheet",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "cosmo_metal_sheet"
+      },
+      "minecraft:display_name": {
+        "value": "Metal Sheet\n§d[Cosmos]"
+      }
+    }
+  }
+}

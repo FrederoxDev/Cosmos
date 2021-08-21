@@ -1,0 +1,33 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cosmo:space_suit_helmet",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 170,
+        "damage_chance": {
+          "min": 60,
+          "max": 100
+        }
+      },
+      "minecraft:icon": {
+        "texture": "cosmo_space_suit_helmet"
+      },
+      "minecraft:render_offsets": "helmets",
+      "minecraft:armor": {
+        "protection": 2
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.head"
+      },
+      "tag:space_suit": {},
+      "minecraft:display_name": {
+        "value": "Space Helmet\n§d[Cosmos]"
+      }
+    }
+  }
+}
