@@ -1,5 +1,5 @@
 pack.name=Cosmos RP
-pack.description=Cosmos is a space addon!
+pack.description=Cosmos is a space addon! [ v1.0.2 ]
 
 ## ==== Entities ==== ##
 entity.cosmo:space_zombie.name=Space Zombie

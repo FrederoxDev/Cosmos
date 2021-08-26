@@ -30,6 +30,7 @@
       }
     },
     "components": {
+      "minecraft:leashable": {},
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:nameable": {},
       // Zombie Components
@@ -97,7 +98,9 @@
         ]
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "despawn_from_distance": {
+          "max_distance": 64
+        }
       },
       // Zombie Behaviors
       "minecraft:behavior.equip_item": {
