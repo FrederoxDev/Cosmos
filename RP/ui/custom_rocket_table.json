@@ -2,7 +2,7 @@
     "namespace": "rocket_table", // make sure to change this namespace, this must be unique
     //ui picture	
     "kitchen_image@horse.overlay_image": {
-        "texture": "textures/kitchen_ui",
+        "texture": "textures/rocket_table",
         "alpha": 1
     },
     //panel for having grid offset
