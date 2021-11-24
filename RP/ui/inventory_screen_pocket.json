@@ -1,0 +1,38 @@
+{
+    "namespace": "crafting_pocket",
+    "recipe_inventory_screen_content_pocket/root_panel": {
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_front",
+                "value": {
+                    //you custom crafting ui
+                    "@rocket_table.final_panel": {} //in custom craft file (namespace.final_panel)
+                }
+            }
+        ]
+    },
+    "recipe_inventory_screen_content_pocket/root_panel/hotbar_and_panels": {
+        "modifications": [
+            {
+                "array_name": "bindings",
+                "operation": "insert_front",
+                "value": {
+                    "binding_name": "#crafting_label_text",
+                    "binding_name_override": "#rocketTable", //change this to your own custom name
+                    "binding_type": "global"
+                }
+            },
+            //vanilla crafting table and your 2nd custom crafting table that doesn't use custom UI
+            {
+                "array_name": "bindings",
+                "operation": "insert_back",
+                "value": {
+                    "binding_type": "view",
+                    "source_property_name": "((#rocketTable = container.crafting) or (#rocketTable = 'rocket_table'))", //use the custom binding here
+                    "target_property_name": "#visible"
+                }
+            }
+        ]
+    }
+}
