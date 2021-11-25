@@ -18,6 +18,9 @@
 		},
 		"cosmo_rocket_table": {
 			"textures": "textures/blocks/rocket_table"
+		},
+		"cosmo_coal_generator": {
+			"textures": "textures/blocks/coal_generator"
 		}
 	}
 }

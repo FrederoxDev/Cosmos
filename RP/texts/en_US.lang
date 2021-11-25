@@ -28,3 +28,4 @@ tile.cosmo:basin_molten_iron.name=Basin with Molten Metal §d[Cosmos]
 action.hint.exit.cosmo:rocket=Exit tier I rocket
 action.interact.tier_1_launch=Enter Tier 1 Rocket
 item.spawn_egg.entity.cosmo:space_spider.name=Spawn Space Spider
+tile.cosmo:coal_generator.name=Coal Generator
