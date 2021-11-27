@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cosmos:titanium_ore"
+		},
+		"components": {
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cosmos_titanium_ore",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:explosion_resistance": 6,
+			"minecraft:destroy_time": 0.75,
+			"minecraft:loot": "loot_tables/titanium_ore.json"
+		}
+	}
+}

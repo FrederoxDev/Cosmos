@@ -2,7 +2,7 @@
   "format_version": "1.17.0",
   "minecraft:block": {
     "description": {
-      "identifier": "cosmo:moon_rock",
+      "identifier": "cosmos:moon_rock",
       "category": "construction"
     },
     "components": {

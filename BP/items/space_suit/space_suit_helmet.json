@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "cosmo:space_suit_helmet",
+      "identifier": "cosmos:space_suit_helmet",
       "category": "items"
     },
     "components": {
@@ -15,7 +15,7 @@
         }
       },
       "minecraft:icon": {
-        "texture": "cosmo_space_suit_helmet"
+        "texture": "cosmos_space_suit_helmet"
       },
       "minecraft:render_offsets": "helmets",
       "minecraft:armor": {

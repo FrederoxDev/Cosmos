@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cosmos:raw_titanium",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "cosmos_raw_titanium"
+			}
+		}
+	}
+}

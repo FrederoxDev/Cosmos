@@ -15,7 +15,7 @@
   "format_version": "1.16.220",
   "minecraft:entity": {
     "description": {
-      "identifier": "cosmo:rocket",
+      "identifier": "cosmos:rocket",
       "is_spawnable": true,
       "is_summonable": true,
       "animations": {
@@ -75,9 +75,9 @@
         "slots": [
           {
             "slot": 0,
-            "item": "cosmo:fuel_tank",
+            "item": "cosmos:fuel_tank",
             "accepted_items": [
-              "cosmo:fuel_tank"
+              "cosmos:fuel_tank"
             ],
             "on_equip": {
               "event": "fuel_rocket"
@@ -85,9 +85,9 @@
           },
           {
             "slot": 1,
-            "item": "cosmo:tier_2_upgrade",
+            "item": "cosmos:tier_2_upgrade",
             "accepted_items": [
-              "cosmo:tier_2_upgrade"
+              "cosmos:tier_2_upgrade"
             ],
             "on_equip": {
               "event": "upgrade_rocket"
@@ -108,7 +108,7 @@
           }
         ]
       },
-      "cosmo:rocket_launch_controller": {
+      "cosmos:rocket_launch_controller": {
         "planets": [
           {
             "name": "overworld",

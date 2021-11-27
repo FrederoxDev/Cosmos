@@ -10,4 +10,4 @@ tag @s add moon
 tag @s remove moon_launch
 effect @s clear
 music play music.supernova
-summon cosmo:rocket 502 120 540
+summon cosmos:rocket 502 120 540

@@ -2,14 +2,14 @@
   "format_version": "1.16.100",
   "minecraft:block": {
     "description": {
-      "identifier": "cosmo:rocket_table",
+      "identifier": "cosmos:rocket_table",
       "is_experimental": false
     },
     "components": {
       "minecraft:geometry": "geometry.rocket_table",
       "minecraft:material_instances": {
         "*": {
-          "texture": "cosmo_rocket_table",
+          "texture": "cosmos_rocket_table",
           "render_method": "alpha_test"
         }
       },

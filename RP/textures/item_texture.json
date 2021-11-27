@@ -2,55 +2,58 @@
 	"resource_pack_name": "Cosmos",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		"cosmo_tier_1_rocket_egg": {
+		"cosmos_tier_1_rocket_egg": {
 			"textures": "textures/items/tier_1_rocket"
 		},
-		"cosmo_space_suit_helmet": {
+		"cosmos_space_suit_helmet": {
 			"textures": [
 				"textures/items/space_suit_helmet"
 			]
 		},
-		"cosmo_space_suit_chestplate": {
+		"cosmos_space_suit_chestplate": {
 			"textures": [
 				"textures/items/space_suit_chestplate"
 			]
 		},
-		"cosmo_space_suit_leggings": {
+		"cosmos_space_suit_leggings": {
 			"textures": [
 				"textures/items/space_suit_leggings"
 			]
 		},
-		"cosmo_space_suit_boots": {
+		"cosmos_space_suit_boots": {
 			"textures": [
 				"textures/items/space_suit_boots"
 			]
 		},
-		"cosmo_fuel_tank": {
+		"cosmos_fuel_tank": {
 			"textures": "textures/items/fuel_tank"
 		},
-		"cosmo_empty_fuel_tank": {
+		"cosmos_empty_fuel_tank": {
 			"textures": "textures/items/empty_fuel_tank"
 		},
-		"cosmo_tier_2_upgrade": {
+		"cosmos_tier_2_upgrade": {
 			"textures": "textures/items/tier_2_upgrade"
 		},
-		"cosmo_rocket_cone": {
+		"cosmos_rocket_cone": {
 			"textures": "textures/items/rocket/rocket_cone"
 		},
-		"cosmo_rocket_body": {
+		"cosmos_rocket_body": {
 			"textures": "textures/items/rocket/rocket_body"
 		},
-		"cosmo_rocket_engine": {
+		"cosmos_rocket_engine": {
 			"textures": "textures/items/rocket/rocket_engine"
 		},
-		"cosmo_space_zombie_egg": {
+		"cosmos_space_zombie_egg": {
 			"textures": "textures/items/space_zombie"
 		},
-		"cosmo_diamond_drill": {
+		"cosmos_diamond_drill": {
 			"textures": "textures/items/diamond_drill"
 		},
-		"cosmo_metal_sheet": {
+		"cosmos_metal_sheet": {
 			"textures": "textures/items/metal_sheet"
+		},
+		"cosmos_raw_titanium": {
+			"textures": "textures/items/raw_titanium"
 		}
 	}
 }

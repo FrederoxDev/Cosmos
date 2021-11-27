@@ -3,5 +3,5 @@ tag @s add mars
 tag @s remove mars_launch
 effect @s clear
 music play music.supernova
-fog @s push cosmo:mars mars
-summon cosmo:rocket -440 120 -475
+fog @s push cosmos:mars mars
+summon cosmos:rocket -440 120 -475

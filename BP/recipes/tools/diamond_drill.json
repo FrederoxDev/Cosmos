@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cosmo:diamond_drill"
+			"identifier": "cosmos:diamond_drill"
 		},
 		"tags": [
 			"crafting_table"
@@ -21,7 +21,7 @@
 			}
 		},
 		"result": {
-			"item": "cosmo:diamond_drill",
+			"item": "cosmos:diamond_drill",
 			"count": 1
 		}
 	}

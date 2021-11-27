@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cosmo:space_boots"
+			"identifier": "cosmos:space_boots"
 		},
 		"tags": [
 			"crafting_table"
@@ -21,7 +21,7 @@
 			}
 		},
 		"result": {
-			"item": "cosmo:space_suit_boots",
+			"item": "cosmos:space_suit_boots",
 			"count": 1
 		}
 	}

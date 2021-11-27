@@ -4,23 +4,26 @@
 	"resource_pack_name": "Cosmos",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
-		"cosmo_moon_rock": {
+		"cosmos_moon_rock": {
 			"textures": "textures/blocks/moon_rock"
 		},
-		"cosmo_oil": {
+		"cosmos_oil": {
 			"textures": "textures/blocks/oil"
 		},
-		"cosmo_mars_rock": {
+		"cosmos_mars_rock": {
 			"textures": "textures/blocks/mars_rock"
 		},
-		"cosmo_basin": {
+		"cosmos_basin": {
 			"textures": "textures/blocks/basin"
 		},
-		"cosmo_rocket_table": {
+		"cosmos_rocket_table": {
 			"textures": "textures/blocks/rocket_table"
 		},
-		"cosmo_coal_generator": {
+		"cosmos_coal_generator": {
 			"textures": "textures/blocks/coal_generator"
+		},
+		"cosmos_titanium_ore": {
+			"textures": "textures/blocks/titanium_ore"
 		}
 	}
 }

@@ -2,30 +2,32 @@ pack.name=Cosmos RP
 pack.description=Cosmos is a space addon! [ v1.0.2 ]
 
 ## ==== Entities ==== ##
-entity.cosmo:space_zombie.name=Space Zombie
-entity.cosmo:rocket.name=Rocket
-entity.cosmo:space_spider.name=Space Spider
+entity.cosmos:space_zombie.name=Space Zombie
+entity.cosmos:rocket.name=Rocket
+entity.cosmos:space_spider.name=Space Spider
 
 
 ## ==== Spawn Eggs ==== ##
-item.spawn_egg.entity.cosmo:space_zombie.name=Spawn Space Zombie §d[Cosmos]
-item.spawn_egg.entity.cosmo:space_spider.name=Spawn Space Spider §d[Cosmos]
-item.spawn_egg.entity.cosmo:rocket.name=Spawn Rocket §d[Cosmos]
+item.spawn_egg.entity.cosmos:space_zombie.name=Spawn Space Zombie §d[Cosmos]
+item.spawn_egg.entity.cosmos:space_spider.name=Spawn Space Spider §d[Cosmos]
+item.spawn_egg.entity.cosmos:rocket.name=Spawn Rocket §d[Cosmos]
 
 
 ## ==== Blocks ==== ##
-tile.cosmo:oil.name=Oil §d[Cosmos]
-tile.cosmo:moon_rock.name=Moon Rock §d[Cosmos]
-tile.cosmo:mars_rock.name=Mars Rock §d[Cosmos]
-tile.cosmo:rocket_table.name=Rocket Table §d[Cosmos]
+tile.cosmos:oil.name=Oil §d[Cosmos]
+tile.cosmos:moon_rock.name=Moon Rock §d[Cosmos]
+tile.cosmos:mars_rock.name=Mars Rock §d[Cosmos]
+tile.cosmos:rocket_table.name=Rocket Table §d[Cosmos]
 
-tile.cosmo:basin_empty.name=Empty Basin §d[Cosmos]
-tile.cosmo:basin_iron_ingot.name=Basin with Iron §d[Cosmos]
-tile.cosmo:basin_metal_sheet.name=Basin with Metal Sheet §d[Cosmos]
-tile.cosmo:basin_molten_iron.name=Basin with Molten Metal §d[Cosmos]
+tile.cosmos:basin_empty.name=Empty Basin §d[Cosmos]
+tile.cosmos:basin_iron_ingot.name=Basin with Iron §d[Cosmos]
+tile.cosmos:basin_metal_sheet.name=Basin with Metal Sheet §d[Cosmos]
+tile.cosmos:basin_molten_iron.name=Basin with Molten Metal §d[Cosmos]
 
 ## ==== Rocket Interactions ==== ##
-action.hint.exit.cosmo:rocket=Exit tier I rocket
+action.hint.exit.cosmos:rocket=Exit tier I rocket
 action.interact.tier_1_launch=Enter Tier 1 Rocket
-item.spawn_egg.entity.cosmo:space_spider.name=Spawn Space Spider
-tile.cosmo:coal_generator.name=Coal Generator
+item.spawn_egg.entity.cosmos:space_spider.name=Spawn Space Spider
+tile.cosmos:coal_generator.name=Coal Generator
+tile.cosmos:titanium_ore.name=Titanium Ore
+item.cosmos:raw_titanium=Raw Titanium

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "cosmos:titanium_ore"
+		},
+		"count": 6,
+		"replace_rules": [
+			{
+				"places_block": "cosmos:titanium_ore",
+				"may_replace": [
+					"deepslate"
+				]
+			}
+		]
+	}
+}

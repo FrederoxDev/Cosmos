@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "cosmo:diamond_drill",
+			"identifier": "cosmos:diamond_drill",
 			"category": "items"
 		},
 		"components": {
@@ -18,7 +18,7 @@
 				"max_durability": 600
 			},
 			"minecraft:icon": {
-				"texture": "cosmo_diamond_drill"
+				"texture": "cosmos_diamond_drill"
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -40,14 +40,14 @@
 				"use_efficiency": true,
 				"destroy_speeds": [
 					{
-						"block": "cosmo:moon_rock",
+						"block": "cosmos:moon_rock",
 						"speed": 50,
 						"on_dig": {
 							"event": "durability"
 						}
 					},
 					{
-						"block": "cosmo:mars_rock",
+						"block": "cosmos:mars_rock",
 						"speed": 50,
 						"on_dig": {
 							"event": "durability"

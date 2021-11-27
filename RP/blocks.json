@@ -4,30 +4,30 @@
 		1,
 		0
 	],
-	"cosmo:moon_rock": {
-		"textures": "cosmo_moon_rock",
+	"cosmos:moon_rock": {
+		"textures": "cosmos_moon_rock",
 		"sound": "stone"
 	},
-	"cosmo:oil": {
+	"cosmos:oil": {
 		"sound": "honey_block"
 	},
-	"cosmo:mars_rock": {
-		"textures": "cosmo_mars_rock",
+	"cosmos:mars_rock": {
+		"textures": "cosmos_mars_rock",
 		"sound": "stone"
 	},
-	"cosmo:basin_empty": {
+	"cosmos:basin_empty": {
 		"sound": "stone"
 	},
-	"cosmo:basin_molten_iron": {
+	"cosmos:basin_molten_iron": {
 		"sound": "stone"
 	},
-	"cosmo:basin_metal_sheet": {
+	"cosmos:basin_metal_sheet": {
 		"sound": "stone"
 	},
-	"cosmo:basin_iron_ingot": {
+	"cosmos:basin_iron_ingot": {
 		"sound": "stone"
 	},
-	"cosmo:rocket_table": {
+	"cosmos:rocket_table": {
 		"sound": "metal"
 	}
 }

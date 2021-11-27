@@ -6,8 +6,8 @@
       "animation_length": 21,
       "timeline": {
         "0.0": [
-          "/replaceitem entity @s[type=cosmo:rocket, c=1] slot.inventory 0 air",
-          "/replaceitem entity @s[type=cosmo:rocket, c=1] slot.inventory 1 air",
+          "/replaceitem entity @s[type=cosmos:rocket, c=1] slot.inventory 0 air",
+          "/replaceitem entity @s[type=cosmos:rocket, c=1] slot.inventory 1 air",
           "/title @p actionbar Launching in: 5",
           "/camerashake add @a[r=100] 0.05"
         ],

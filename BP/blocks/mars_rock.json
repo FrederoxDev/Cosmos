@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:block": {
     "description": {
-      "identifier": "cosmo:mars_rock",
+      "identifier": "cosmos:mars_rock",
       "is_experimental": false
     },
     "components": {

@@ -2,13 +2,13 @@
 	"format_version": "1.17.0",
 	"minecraft:ore_feature": {
 		"description": {
-			"identifier": "cosmo:oil_feature"
+			"identifier": "cosmos:oil_feature"
 		},
 		"count": 9,
 		"replace_rules": [
 			{
 				"places_block": {
-					"name": "cosmo:oil",
+					"name": "cosmos:oil",
 					"states": {}
 				},
 				"may_replace": [

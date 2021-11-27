@@ -1,7 +1,7 @@
 // This is a comment
 
 export default defineComponent(({ name, template, schema }) => {
-	name('cosmo:rocket_launch_controller')
+	name('cosmos:rocket_launch_controller')
 	schema({
 		properties: {
 			planets: {

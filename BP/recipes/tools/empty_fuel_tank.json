@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "cosmo:empty_fuel_tank"
+			"identifier": "cosmos:empty_fuel_tank"
 		},
 		"tags": [
 			"crafting_table"
@@ -22,7 +22,7 @@
 		},
 		"result": [
 			{
-				"item": "cosmo:empty_fuel_tank",
+				"item": "cosmos:empty_fuel_tank",
 				"count": 2
 			}
 		]

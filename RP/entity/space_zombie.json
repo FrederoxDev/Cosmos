@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "cosmo:space_zombie",
+			"identifier": "cosmos:space_zombie",
 			"materials": {
 				"default": "entity_alphablend"
 			},
@@ -13,7 +13,7 @@
 				"default": "geometry.space_zombie"
 			},
 			"spawn_egg": {
-				"texture": "cosmo_space_zombie_egg",
+				"texture": "cosmos_space_zombie_egg",
 				"texture_index": 0
 			},
 			"scripts": {

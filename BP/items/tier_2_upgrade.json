@@ -2,12 +2,12 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "cosmo:tier_2_upgrade",
+      "identifier": "cosmos:tier_2_upgrade",
       "category": "equipment"
     },
     "components": {
       "minecraft:icon": {
-        "texture": "cosmo_tier_2_upgrade"
+        "texture": "cosmos_tier_2_upgrade"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {

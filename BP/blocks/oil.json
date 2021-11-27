@@ -2,14 +2,14 @@
   "format_version": "1.17.0",
   "minecraft:block": {
     "description": {
-      "identifier": "cosmo:oil",
+      "identifier": "cosmos:oil",
       "is_experimental": false
     },
     "components": {
       "minecraft:geometry": "geometry.oil",
       "minecraft:material_instances": {
         "*": {
-          "texture": "cosmo_oil",
+          "texture": "cosmos_oil",
           "render_method": "alpha_test"
         }
       },

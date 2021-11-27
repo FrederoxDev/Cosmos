@@ -2,12 +2,12 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "cosmo:fuel_tank",
+      "identifier": "cosmos:fuel_tank",
       "category": "equipment"
     },
     "components": {
       "minecraft:icon": {
-        "texture": "cosmo_fuel_tank"
+        "texture": "cosmos_fuel_tank"
       },
       "minecraft:max_stack_size": 16,
       "minecraft:display_name": {

@@ -2,30 +2,28 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "cosmos:overworld_underground_oil",
-			"places_feature": "cosmos:oil_feature"
+			"identifier": "cosmos:titanium_ore",
+			"places_feature": "cosmos:titanium_ore"
 		},
 		"conditions": {
 			"placement_pass": "underground_pass",
-			"minecraft:biome_filter": [
-				{
-					"any_of": [
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "overworld"
-						},
-						{
-							"test": "has_biome_tag",
-							"operator": "==",
-							"value": "overworld_generation"
-						}
-					]
-				}
-			]
+			"minecraft:biome_filter": {
+				"any_of": [
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "overworld"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "overworld_generation"
+					}
+				]
+			}
 		},
 		"distribution": {
-			"iterations": 2,
+			"iterations": 10,
 			"coordinate_eval_order": "zyx",
 			"x": {
 				"distribution": "uniform",
@@ -37,8 +35,8 @@
 			"y": {
 				"distribution": "uniform",
 				"extent": [
-					0,
-					64
+					-64,
+					0
 				]
 			},
 			"z": {

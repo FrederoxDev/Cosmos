@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "cosmo:space_suit_helmet",
+      "identifier": "cosmos:space_suit_helmet",
       "materials": {
         "default": "armor",
         "enchanted": "armor_enchanted"
