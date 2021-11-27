@@ -54,6 +54,9 @@
 		},
 		"cosmos_raw_titanium": {
 			"textures": "textures/items/raw_titanium"
+		},
+		"cosmos_titanium_ingot": {
+			"textures": "textures/items/titanium_ingot"
 		}
 	}
 }

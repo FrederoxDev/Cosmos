@@ -31,3 +31,4 @@ item.spawn_egg.entity.cosmos:space_spider.name=Spawn Space Spider
 tile.cosmos:coal_generator.name=Coal Generator
 tile.cosmos:titanium_ore.name=Titanium Ore
 item.cosmos:raw_titanium=Raw Titanium
+item.cosmos:titanium_ingot=Titanium Ingot

@@ -14,7 +14,19 @@
 			},
 			"minecraft:explosion_resistance": 6,
 			"minecraft:destroy_time": 0.75,
-			"minecraft:loot": "loot_tables/titanium_ore.json"
+			"minecraft:loot": "loot_tables/titanium_ore.json",
+			"minecraft:on_player_destroyed": {
+				"event": "xp_reward"
+			}
+		},
+		"events": {
+			"xp_reward": {
+				"run_command": {
+					"command": [
+						"structure load xp_structure ~ ~ ~"
+					]
+				}
+			}
 		}
 	}
 }
