@@ -17,6 +17,10 @@
 			"minecraft:loot": "loot_tables/titanium_ore.json",
 			"minecraft:on_player_destroyed": {
 				"event": "xp_reward"
+			},
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.nature"
 			}
 		},
 		"events": {

@@ -1,7 +1,0 @@
-{
-  "texture_data": {
-    "egg_{{IDENTIFIER}}": {
-      "textures": [ "textures/items/egg_{{IDENTIFIER}}" ]
-    }
-  }
-}

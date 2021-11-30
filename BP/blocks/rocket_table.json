@@ -2,8 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:block": {
     "description": {
-      "identifier": "cosmos:rocket_table",
-      "is_experimental": false
+      "identifier": "cosmos:rocket_table"
     },
     "components": {
       "minecraft:geometry": "geometry.rocket_table",
