@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cosmos:astrumite_ore"
+		},
+		"components": {
+			"minecraft:unit_cube": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cosmos_astrumite_ore",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:explosion_resistance": 6,
+			"minecraft:destroy_time": 0.75,
+			"minecraft:loot": "loot_tables/astrumite_ore.json",
+			"minecraft:on_player_destroyed": {
+				"event": "xp_reward"
+			},
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.nature"
+			},
+			"minecraft:ticking": {
+				"on_tick": {
+					"event": "particle"
+				},
+				"range": [
+					1,
+					10
+				],
+				"looping": true
+			},
+			"minecraft:block_light_emission": 0.6
+		},
+		"events": {
+			"xp_reward": {
+				"run_command": {
+					"command": [
+						"structure load xp_structure ~ ~ ~"
+					]
+				}
+			},
+			"particle": {
+				"run_command": {
+					"command": [
+						"particle cosmos:astrumite_ore"
+					]
+				}
+			}
+		}
+	}
+}

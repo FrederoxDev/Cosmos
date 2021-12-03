@@ -1,0 +1,45 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cosmos:astrumite_shard"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "enchantments": [
+                        {
+                            "enchantment": "fortune",
+                            "level": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cosmos:astrumite_shard",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

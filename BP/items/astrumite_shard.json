@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "cosmos:astrumite_shard",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "cosmos_astrumite_shard"
+			}
+		}
+	}
+}

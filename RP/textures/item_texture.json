@@ -25,38 +25,20 @@
 				"textures/items/space_suit_boots"
 			]
 		},
-		"cosmos_fuel_tank": {
-			"textures": "textures/items/fuel_tank"
-		},
-		"cosmos_empty_fuel_tank": {
-			"textures": "textures/items/empty_fuel_tank"
-		},
-		"cosmos_tier_2_upgrade": {
-			"textures": "textures/items/tier_2_upgrade"
-		},
-		"cosmos_rocket_cone": {
-			"textures": "textures/items/rocket/rocket_cone"
-		},
-		"cosmos_rocket_body": {
-			"textures": "textures/items/rocket/rocket_body"
-		},
-		"cosmos_rocket_engine": {
-			"textures": "textures/items/rocket/rocket_engine"
-		},
 		"cosmos_space_zombie_egg": {
 			"textures": "textures/items/space_zombie"
 		},
 		"cosmos_diamond_drill": {
 			"textures": "textures/items/diamond_drill"
 		},
-		"cosmos_metal_sheet": {
-			"textures": "textures/items/metal_sheet"
-		},
 		"cosmos_raw_titanium": {
 			"textures": "textures/items/raw_titanium"
 		},
 		"cosmos_titanium_ingot": {
 			"textures": "textures/items/titanium_ingot"
+		},
+		"cosmos_astrumite_shard": {
+			"textures": "textures/items/ore_crystal"
 		}
 	}
 }

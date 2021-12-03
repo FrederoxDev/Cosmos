@@ -32,3 +32,5 @@ tile.cosmos:coal_generator.name=Coal Generator
 tile.cosmos:titanium_ore.name=Titanium Ore
 item.cosmos:raw_titanium=Raw Titanium
 item.cosmos:titanium_ingot=Titanium Ingot
+tile.cosmos:astrumite_ore.name=Astrumite Ore
+item.cosmos:astrumite_shard=Astrumite Shard

@@ -24,6 +24,9 @@
 		},
 		"cosmos_titanium_ore": {
 			"textures": "textures/blocks/titanium_ore"
+		},
+		"cosmos_astrumite_ore": {
+			"textures": "textures/blocks/astrumite_ore"
 		}
 	}
 }
