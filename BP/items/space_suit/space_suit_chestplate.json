@@ -25,9 +25,6 @@
         "slot": "slot.armor.chest"
       },
       "tag:space_suit": {},
-      "minecraft:display_name": {
-        "value": "Space Chestplate\n§d[Cosmos]"
-      }
     }
   }
 }

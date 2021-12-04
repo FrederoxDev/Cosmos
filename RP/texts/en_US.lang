@@ -1,36 +1,22 @@
-pack.name=Cosmos RP
-pack.description=Cosmos is a space addon! [ v1.0.2 ]
+pack.name=§dCosmos RP §f[DEV v2.0.0]
+pack.description=By Frederox
 
-## ==== Entities ==== ##
-entity.cosmos:space_zombie.name=Space Zombie
-entity.cosmos:rocket.name=Rocket
-entity.cosmos:space_spider.name=Space Spider
-
-
-## ==== Spawn Eggs ==== ##
-item.spawn_egg.entity.cosmos:space_zombie.name=Spawn Space Zombie §d[Cosmos]
-item.spawn_egg.entity.cosmos:space_spider.name=Spawn Space Spider §d[Cosmos]
-item.spawn_egg.entity.cosmos:rocket.name=Spawn Rocket §d[Cosmos]
-
-
-## ==== Blocks ==== ##
-tile.cosmos:oil.name=Oil §d[Cosmos]
-tile.cosmos:moon_rock.name=Moon Rock §d[Cosmos]
-tile.cosmos:mars_rock.name=Mars Rock §d[Cosmos]
-tile.cosmos:rocket_table.name=Rocket Table §d[Cosmos]
-
-tile.cosmos:basin_empty.name=Empty Basin §d[Cosmos]
-tile.cosmos:basin_iron_ingot.name=Basin with Iron §d[Cosmos]
-tile.cosmos:basin_metal_sheet.name=Basin with Metal Sheet §d[Cosmos]
-tile.cosmos:basin_molten_iron.name=Basin with Molten Metal §d[Cosmos]
-
-## ==== Rocket Interactions ==== ##
-action.hint.exit.cosmos:rocket=Exit tier I rocket
-action.interact.tier_1_launch=Enter Tier 1 Rocket
-item.spawn_egg.entity.cosmos:space_spider.name=Spawn Space Spider
-tile.cosmos:coal_generator.name=Coal Generator
-tile.cosmos:titanium_ore.name=Titanium Ore
+## ==== Items ==== ##
 item.cosmos:raw_titanium=Raw Titanium
 item.cosmos:titanium_ingot=Titanium Ingot
-tile.cosmos:astrumite_ore.name=Astrumite Ore
 item.cosmos:astrumite_shard=Astrumite Shard
+
+item.cosmos:space_suit_boots=Space Boots
+item.cosmos:space_suit_leggings=Space Leggings
+item.cosmos:space_suit_chestplate=Space Chestplate
+item.cosmos:space_suit_helmet=Space Helmet
+
+item.cosmos:diamond_drill=Diamond Drill
+
+## ==== Blocks ==== ##
+tile.cosmos:titanium_ore.name=Titanium Ore
+tile.cosmos:astrumite_ore.name=Astrumite Ore
+
+## ==== Entities == ##
+entity.cosmos:rocket.name=Rocket
+item.spawn_egg.entity.cosmos:rocket.name=Spawn Rocket

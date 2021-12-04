@@ -6,9 +6,6 @@
 			"category": "items"
 		},
 		"components": {
-			"minecraft:display_name": {
-				"value": "Diamond Drill\n§d[Cosmos]"
-			},
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.pickaxe"
 			},

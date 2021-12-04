@@ -25,9 +25,6 @@
         "slot": "slot.armor.head"
       },
       "tag:space_suit": {},
-      "minecraft:display_name": {
-        "value": "Space Helmet\n§d[Cosmos]"
-      }
     }
   }
 }

@@ -24,10 +24,7 @@
       "minecraft:wearable": {
         "slot": "slot.armor.feet"
       },
-      "tag:space_suit": {},
-      "minecraft:display_name": {
-        "value": "Space Boots\n§d[Cosmos]"
-      }
+      "tag:space_suit": {}
     }
   }
 }

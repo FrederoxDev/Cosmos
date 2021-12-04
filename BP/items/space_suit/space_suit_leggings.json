@@ -25,9 +25,6 @@
         "slot": "slot.armor.legs"
       },
       "tag:space_suit": {},
-      "minecraft:display_name": {
-        "value": "Space Leggings\n§d[Cosmos]"
-      }
     }
   }
 }
